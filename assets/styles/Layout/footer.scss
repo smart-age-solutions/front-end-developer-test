@@ -1,0 +1,110 @@
+.footer {
+  background-color: $dark-color-secondary;
+  color: $light-color-primary;
+  min-height: 600px; //REMEMBER TO TAKE OUT LATER
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $border-color-gray-secondary;
+    padding: 60px 0 41px;
+
+    &__sections {
+      display: flex;
+
+      li {
+        margin-right: 40px;
+
+        a {
+          text-decoration: none;
+          font-family: 'Raleway', sans-serif;
+          font-size: 14px;
+          color: $light-color-primary;
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    &__social {
+      display: flex;
+      align-items: center;
+
+      &__item {
+        margin-right: 48px;
+
+        a { 
+          width: 22px;
+          height: 22px;
+        }
+
+        &--facebook {
+          content: url('/assets/images/facebook.svg');
+        }
+
+        &--instagram {
+          content: url('/assets/images/instagram.svg');
+        }
+
+        &--twitter {
+          content: url('/assets/images/twitter.svg');
+        }
+
+        button {
+          background-color: transparent;
+          border: 1px solid #767676; //REMOVE HEX COLOR
+          padding: 10px 60px;
+          color: $light-color-primary;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 12px;
+          letter-spacing: 2px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &__newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 36px 0;
+    border-bottom: 1px solid $border-color-gray-secondary;
+
+    p {
+      font-family: 'Playfair Display', sans-serif;
+      color: $yellow-color-primary;
+      letter-spacing: 1px;
+    }
+
+
+    &__email {
+      border: 1px solid $yellow-color-primary;
+
+      input {
+        background-color: transparent;
+        border: none;
+        padding: 12px;
+
+        &::placeholder {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 14px;
+          color: $light-color-primary;
+        }
+      }
+
+      button {
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 2px;
+        background-color: $yellow-color-primary;
+        color: $dark-color-primary;
+        border: none;
+        padding: 10px;
+        margin: 4px;
+        cursor: pointer;
+      }
+    }
+    
+  }
+}

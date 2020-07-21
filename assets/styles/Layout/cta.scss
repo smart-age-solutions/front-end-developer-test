@@ -1,0 +1,40 @@
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/assets/images/bg-cta.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  width: 100%;
+
+  &__hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    letter-spacing: 4px;
+
+    p {
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      color: $yellow-color-primary;
+    }
+
+    h3 {
+      font-family: 'Playfair Display', sans-serif;
+      font-size: 80px;
+      font-weight: bold;
+      color: $light-color-primary;
+      margin: 15px 0 40px;
+    }
+
+    a {
+      content: url('/assets/images/arrow-footer.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 45px;
+      width: 45px;
+    }
+  }
+}
