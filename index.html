@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="public/style/style.min.css" />
   <title>Smart Age Solutions Front-end Developer Test</title>
 </head>
+
 <body>
   <header>
     <div class="header__nav">
@@ -59,7 +61,7 @@
       </div>
     </div>
   </header>
-  
+
   <main>
 
     <section class="cta">
@@ -81,7 +83,7 @@
                 <a href="#">COLLECTIONS</a>
               </li>
               <li>
-                <a href="#">CATEGORIES</a> 
+                <a href="#">CATEGORIES</a>
               </li>
               <li>
                 <a href="#">STORES</a>
@@ -116,11 +118,19 @@
             <input type="text" placeholder="Enter your e-mail">
             <button>SUBSCRIBE</button>
           </div>
-          <nav>
+          <nav class="footer__newsletter__nav">
             <ul>
-              <li>PRIVACY POLICY</li>
-              <li>RETURNS AND EXCHANGES</li>
-              <li>TRACK ORDER</li>
+              <li>
+                <a href="#">PRIVACY POLICY</a>
+                <span>/</span>
+              </li>
+              <li>
+                <a href="#">RETURNS AND EXCHANGES</a>
+                <span>/</span>
+              </li>
+              <li>
+                <a href="#">TRACK ORDER</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -128,41 +138,46 @@
         <div class="footer__infos">
           <div class="footer__infos__contact">
             <p>Contact us</p>
-            <p>owner@example.com</p>
+            <span>owner@example.com</span>
           </div>
 
           <div class="footer__infos__support">
             <p>SUPPORT</p>
-            <ul>
-              <li>image1</li>
-              <li>image2</li>
-              <li>image3</li>
-            </ul>
+            <div class="footer__infos__support__brand">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
 
           <div class="footer__infos__payments">
             <p>PAYMENT METHODS</p>
-            <ul>
-              <li>credit cards images</li>
-              <li>credit cards images</li>
-              <li>credit cards images</li>
-              <li>credit cards images</li>
-              <li>credit cards images</li>
-            </ul>
-          </div> 
-        </div>
+            <div class="footer__infos__payments__cards">
+              <span class="footer__infos__payments__cards--master"></span>
+              <span class="footer__infos__payments__cards--visa"></span>
+              <span class="footer__infos__payments__cards--discover"></span>
+              <span class="footer__infos__payments__cards--paypal"></span>
+              <span class="footer__infos__payments__cards--amex"></span>
+              </ul>
+            </div>
+          </div>
 
-        <div class="footer__copyright">
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <div class="container">
           <div class="footer__copyright__text">
             <p>Smart Age Solutions, © 2019 | MADE WITH LOVE BY SMART AGE SOLUTIONS</p>
           </div>
 
           <div class="footer__copyright__logo">
-            
+            <img src="./assets/images/logo-footer.png" alt="Smart Age Solutions">
           </div>
         </div>
       </div>
     </section>
   </footer>
 </body>
+
 </html>
