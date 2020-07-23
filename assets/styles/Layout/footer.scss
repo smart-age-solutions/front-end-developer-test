@@ -12,13 +12,14 @@
 
     &__sections {
       display: flex;
+      flex-wrap: wrap;
 
       li {
         margin-right: 40px;
 
         a {
           text-decoration: none;
-          font-family: 'Raleway', sans-serif;
+          font-family: "Raleway", sans-serif;
           font-size: 14px;
           color: $light-color-primary;
           letter-spacing: 2px;
@@ -28,26 +29,27 @@
 
     &__social {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
 
       &__item {
         margin-right: 48px;
 
-        a { 
+        a {
           width: 22px;
           height: 22px;
         }
 
         &--facebook {
-          content: url('/assets/images/facebook.svg');
+          content: url("/assets/images/facebook.svg");
         }
 
         &--instagram {
-          content: url('/assets/images/instagram.svg');
+          content: url("/assets/images/instagram.svg");
         }
 
         &--twitter {
-          content: url('/assets/images/twitter.svg');
+          content: url("/assets/images/twitter.svg");
         }
 
         button {
@@ -55,7 +57,7 @@
           border: 1px solid #767676; //REMOVE HEX COLOR
           padding: 10px 60px;
           color: $light-color-primary;
-          font-family: 'Open Sans', sans-serif;
+          font-family: "Open Sans", sans-serif;
           font-size: 12px;
           letter-spacing: 2px;
           cursor: pointer;
@@ -73,29 +75,32 @@
     border-bottom: 1px solid $border-color-gray-secondary;
 
     p {
-      font-family: 'Playfair Display', sans-serif;
+      font-family: "Playfair Display", sans-serif;
       color: $yellow-color-primary;
       letter-spacing: 1px;
     }
 
-
     &__email {
       border: 1px solid $yellow-color-primary;
+      margin: 26px 0;
 
       input {
         background-color: transparent;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        color: $light-color-primary;
         border: none;
         padding: 12px;
 
         &::placeholder {
-          font-family: 'Open Sans', sans-serif;
+          font-family: "Open Sans", sans-serif;
           font-size: 14px;
           color: $light-color-primary;
         }
       }
 
       button {
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         letter-spacing: 2px;
         background-color: $yellow-color-primary;
         color: $dark-color-primary;
@@ -105,6 +110,114 @@
         cursor: pointer;
       }
     }
-    
+
+    &__nav {
+      ul {
+        display: flex;
+
+        li {
+          a {
+            font-family: "Open Sans", sans-serif;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            margin: 0 20px;
+            color: #999999;
+          }
+
+          span {
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+
+  &__infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 69px 0 60px;
+
+    > div {
+      > p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 22px;
+      }
+
+      > ul {
+        display: flex;
+      }
+    }
+
+    &__support {
+      &__brand {
+        span {
+          content: url('/assets/images/gia.png');
+          width: 96px;
+          height: 36px;
+
+          &:first-child {
+            margin-right: 122px;
+          }
+
+          &:last-child {
+            margin-left: 27px;
+          }
+        }
+      }
+    }
+
+    &__payments {
+      &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 72px;
+      
+        > span {
+          margin-right: 14px;
+        }
+
+        &--master {
+          content: url('/assets/images/mastercard.png');
+        }
+
+        &--visa {
+          content: url('/assets/images/visa.png');
+        }
+
+        &--discover {
+          content: url('/assets/images/discover.png');
+        }
+
+        &--paypal {
+          content: url('/assets/images/paypal.png');
+        }
+
+        &--amex {
+          content: url('/assets/images/amex.png');
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    background-color: #3c3c3c;
+    padding: 20px 0;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__text {
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
   }
 }
