@@ -8,6 +8,11 @@
   height: 650px;
   width: 100%;
 
+  @include breakpoint-xs {
+    height: 350px;
+    font-size: 42px;
+  }
+
   &__hero {
     display: flex;
     align-items: center;
@@ -30,7 +35,7 @@
     }
 
     a {
-      content: url('/assets/images/arrow-footer.svg');
+      content: url('/assets/images/arrow-white.svg');
       background-repeat: no-repeat;
       background-size: cover;
       height: 45px;
