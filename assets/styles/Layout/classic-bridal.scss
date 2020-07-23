@@ -1,0 +1,82 @@
+.shop-cta {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Raleway", sans-serif;
+
+  @include breakpoint-md {
+    flex-wrap: nowrap;
+  }
+
+  &__image {
+    width: 50%;
+    background: url('/assets/images/shop-cta-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+
+    @include breakpoint-xs {
+      width: 100%;
+      height: 375px;
+      background-size: cover;
+    }
+
+    @include breakpoint-md {
+      width: 40%;
+      height: 406px;
+    }
+  }
+
+  &__infos {
+    width: 50%;
+    padding: 0 178px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #472138;
+
+    @include breakpoint-xs {
+      width: 100%;
+      padding: 36px;
+    }
+
+    @include breakpoint-md {
+      width: 60%;
+    }
+
+    &__title {
+      font-size: 80px;
+      font-weight: bold;
+      color: $yellow-color-primary;
+
+      @include breakpoint-xs {
+        font-size: 42px;
+      }
+    }
+
+    &__description {
+      font-size: 18px;
+      color: $light-color-primary;
+      line-height: 27px;
+      margin: 26px 0;
+
+      @include breakpoint-xs {
+        font-size: 16px;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 2px;
+      color: $light-color-primary;
+      
+      &::before {
+        content: url('/assets/images/arrow-white.svg');
+        margin-right: 12px;
+      }
+    }
+  }
+}
