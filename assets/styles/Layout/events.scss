@@ -1,0 +1,123 @@
+.events {
+  font-family: "Raleway", sans-serif;
+  padding: 60px 0;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint-xs {
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint-md {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__text {
+    @include breakpoint-xs {
+      width: 100%;
+      text-align: center;
+    }
+
+    @include breakpoint-md {
+      text-align: left;
+    }
+
+    > span {
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    > p {
+      font-family: "Playfair Display", sans-serif;
+      font-weight: bold;
+      font-size: 80px;
+      color: $yellow-color-primary;
+      letter-spacing: 4px;
+      margin-top: 10px;
+
+      @include breakpoint-xs {
+        font-size: 42px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__schedules {
+    @include breakpoint-md {
+      width: 100%;
+    }
+
+    &__list {
+      &__item {
+        display: flex;
+        align-items: center;
+        padding: 25px;
+        border-top: 1px solid #D4D4D4;
+
+        @include breakpoint-xs {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 25px 0;
+        }
+
+        &:last-child {
+          border-bottom: 1px solid #D4D4D4;
+        }
+      }
+    }
+
+    &__date {
+      display: flex;
+      width: 236px;
+      flex-direction: column;
+
+      @include breakpoint-xs {
+        width: 100%;
+      }
+
+      @include breakpoint-md {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 24px;
+      }
+
+      &__month {
+        font-size: 20px;
+        letter-spacing: 4px;
+      }
+
+      &__day {
+        font-family: "Playfair Display", sans-serif;
+        font-size: 48px;
+        font-weight: bold;
+        color: $yellow-color-primary;
+
+        @include breakpoint-xs {
+          font-size: 36px;
+          margin-bottom: 18px;
+        }
+      }
+    }
+
+    &__item {
+      &__local {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 6px;
+
+        @include breakpoint-xs {
+          font-size: 24px;
+        }
+      }
+
+      &__address {
+        color: $dark-color-secondary;
+      }
+    }
+  }
+}
