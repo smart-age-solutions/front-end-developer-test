@@ -57,6 +57,11 @@ header {
             background: $light-color-secondary;
             border-radius: 50px;
             padding: 12px;
+
+            @include breakpoint-xs {
+              margin-left: 0;
+              padding: 0;
+            }
           }
         }
       }

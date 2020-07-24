@@ -20,21 +20,30 @@
     flex-direction: column;
     letter-spacing: 4px;
 
-    p {
+    > p {
       font-family: 'Raleway', sans-serif;
       font-size: 20px;
       color: $yellow-color-primary;
+
+      @include breakpoint-xs {
+        font-size: 18px;
+      }
     }
 
-    h3 {
+    > h3 {
       font-family: 'Playfair Display', sans-serif;
       font-size: 80px;
       font-weight: bold;
       color: $light-color-primary;
       margin: 15px 0 40px;
+
+      @include breakpoint-xs {
+        font-size: 42px;
+        margin-bottom: 20px;
+      }
     }
 
-    a {
+    > a {
       content: url('/assets/images/arrow-white.svg');
       background-repeat: no-repeat;
       background-size: cover;

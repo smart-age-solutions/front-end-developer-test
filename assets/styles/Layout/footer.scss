@@ -1,7 +1,6 @@
 .footer {
   background-color: $dark-color-secondary;
   color: $light-color-primary;
-  min-height: 600px; //REMEMBER TO TAKE OUT LATER
 
   &__menu {
     display: flex;
@@ -10,9 +9,52 @@
     border-bottom: 1px solid $border-color-gray-secondary;
     padding: 60px 0 41px;
 
+    @include breakpoint-xs {
+      justify-content: center;
+      border: none;
+      padding: 0;
+    }
+
+    @include breakpoint-md {
+      justify-content: space-between;
+    }
+
+    @include breakpoint-md {
+      border-bottom: 1px solid $border-color-gray-secondary;;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+
+      @include breakpoint-xs {
+        flex-direction: column;
+      }
+
+      @include breakpoint-md {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    &__nav {
+      @include breakpoint-xs {
+        display: none;
+      }
+
+      @include breakpoint-md {
+        display: none;
+      }
+    }
+
     &__sections {
       display: flex;
       flex-wrap: wrap;
+
+      @include breakpoint-xs {
+        display: none;
+      }
 
       li {
         margin-right: 40px;
@@ -32,10 +74,18 @@
       flex-wrap: wrap;
       align-items: center;
 
+      @include breakpoint-xs {
+        justify-content: center;
+      }
+
       &__item {
         margin-right: 48px;
 
-        a {
+        @include breakpoint-xs {
+          margin-right: 0;
+        }
+
+        > a {
           width: 22px;
           height: 22px;
         }
@@ -46,21 +96,31 @@
 
         &--instagram {
           content: url("/assets/images/instagram.svg");
+
+          @include breakpoint-xs {
+            margin: 30px;
+          }
         }
 
         &--twitter {
           content: url("/assets/images/twitter.svg");
         }
+      }
+    }
 
-        button {
-          background-color: transparent;
-          border: 1px solid #767676; //REMOVE HEX COLOR
-          padding: 10px 60px;
-          color: $light-color-primary;
-          font-family: "Open Sans", sans-serif;
-          font-size: 12px;
-          letter-spacing: 2px;
-          cursor: pointer;
+    &__button {
+      > button {
+        background-color: transparent;
+        border: 1px solid #767676; //REMOVE HEX COLOR
+        padding: 10px 60px;
+        color: $light-color-primary;
+        font-family: "Open Sans", sans-serif;
+        font-size: 12px;
+        letter-spacing: 2px;
+        cursor: pointer;
+
+        @include breakpoint-xs {
+          padding: 10px 90px;
         }
       }
     }
@@ -74,10 +134,24 @@
     padding: 36px 0;
     border-bottom: 1px solid $border-color-gray-secondary;
 
-    p {
+    @include breakpoint-xs {
+      align-items: flex-start;
+      padding: 36px 0 0;
+    }
+
+    @include breakpoint-md {
+      align-items: center;
+    }
+
+    > p {
       font-family: "Playfair Display", sans-serif;
+      font-weight: bold;
       color: $yellow-color-primary;
       letter-spacing: 1px;
+
+      @include breakpoint-xs {
+        font-size: 24px;
+      }
     }
 
     &__email {
@@ -112,21 +186,50 @@
     }
 
     &__nav {
-      ul {
+      > ul {
         display: flex;
+        flex-wrap: wrap;
+        
+        @include breakpoint-xs {
+          flex-direction: column;
+        }
 
-        li {
-          a {
+        @include breakpoint-md {
+          flex-direction: row;
+        }
+
+        > li {
+          @include breakpoint-xs {
+            margin-bottom: 28px;
+          }
+
+          > a {
             font-family: "Open Sans", sans-serif;
             font-size: 13px;
             letter-spacing: 2px;
             text-decoration: none;
             margin: 0 20px;
             color: #999999;
+
+            @include breakpoint-xs {
+              margin: 0;
+            }
+
+            @include breakpoint-md {
+              margin: 0 20px;
+            }
           }
 
-          span {
+          > span {
             color: #999;
+
+            @include breakpoint-xs {
+              display: none;
+            }
+
+            @include breakpoint-md {
+              display: inline;
+            }
           }
         }
       }
@@ -139,6 +242,10 @@
     justify-content: space-between;
     padding: 69px 0 60px;
 
+    @include breakpoint-xs {
+      padding: 36px 0 50px;
+    }
+
     > div {
       > p {
         font-family: "Open Sans", sans-serif;
@@ -146,6 +253,16 @@
         font-weight: bold;
         letter-spacing: 1px;
         margin-bottom: 22px;
+
+        @include breakpoint-xs {
+          margin-bottom: 20px;
+        }
+      }
+
+      > span {
+        @include breakpoint-xs {
+          font-size: 20px;
+        }
       }
 
       > ul {
@@ -154,18 +271,40 @@
     }
 
     &__support {
+      @include breakpoint-xs {
+        padding: 38px 0 44px;
+      }
+
+      @include breakpoint-md {
+        padding: 0 0 44px;
+      }
+
       &__brand {
-        span {
+        > span {
           content: url('/assets/images/gia.png');
           width: 96px;
           height: 36px;
 
+          @include breakpoint-xs {
+            width: 85px;
+            height: 32px;
+            margin: 0 20px;
+          }
+
           &:first-child {
             margin-right: 122px;
+
+            @include breakpoint-xs {
+              margin: 0;
+            }
           }
 
           &:last-child {
             margin-left: 27px;
+
+            @include breakpoint-xs {
+              margin: 0;
+            }
           }
         }
       }
@@ -176,6 +315,10 @@
         display: flex;
         flex-wrap: wrap;
         margin-right: 72px;
+
+        @include breakpoint-xs {
+          margin-right: 0;
+        }
       
         > span {
           margin-right: 14px;
@@ -212,12 +355,31 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @include breakpoint-xs {
+        flex-direction: column;
+      }
+
+      @include breakpoint-md {
+        flex-direction: row;
+      }
     }
 
     &__text {
       font-family: "Open Sans", sans-serif;
       font-size: 12px;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
+
+      @include breakpoint-xs {
+        text-align: center;
+        line-height: 16px;
+        margin-bottom: 22px;
+      }
+
+      @include breakpoint-md {
+        width: 387px;
+        text-align: left;
+      }
     }
   }
 }
