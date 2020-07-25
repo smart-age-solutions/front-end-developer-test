@@ -1,11 +1,13 @@
 header {
   @include breakpoint-xs {
     display: flex;
+    justify-content: space-between;
   }
 
   .header__nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 15px 20px;
 
     &__find {
@@ -15,7 +17,7 @@ header {
         justify-content: center;
         background: transparent;
         border: 1px solid $border-color-gray-primary;
-        font-family: 'Raleway', sans-serif;
+        font-family: "Raleway", sans-serif;
         font-weight: 500;
         letter-spacing: 2px;
         border-radius: 50px;
@@ -23,7 +25,7 @@ header {
         cursor: pointer;
 
         &::before {
-          content: url('/assets/images/location.svg');
+          content: url("/assets/images/location.svg");
           background-repeat: no-repeat;
           background-size: cover;
           height: 19px;
@@ -37,22 +39,55 @@ header {
       }
     }
 
-    &__icons {
-      ul {
+    &__icons {  
+      &__list {
         display: flex;
         align-items: center;
 
-        li {
+        &__item {
           margin: 0 10px;
 
-          a {
+          &:nth-child(1) {
+            @include breakpoint-xs {
+              display: none;
+            }
+          }
+
+          &:nth-child(2) {
+            @include breakpoint-xs {
+              display: none;
+            }
+          }
+
+          > a {
             display: flex;
             text-decoration: none;
             color: $dark-color-primary;
           }
 
-          &:last-child {
-            margin-left: 50px;
+          &--user {
+            content: url(/assets/images/user.svg);
+
+            @include breakpoint-xs {
+              display: none;
+            }
+          }
+
+          &--heart {
+            content: url(/assets/images/heart.svg);
+
+            @include breakpoint-xs {
+              display: none;
+            }
+          }
+
+          &--bgcartshop {
+            content: url(/assets/images/bagcartshop.svg);
+          }
+
+          &--find {
+            content: url(/assets/images/find.svg);
+            margin-left: 30px;
             border: 1px solid $border-color-gray-primary;
             background: $light-color-secondary;
             border-radius: 50px;
@@ -61,6 +96,10 @@ header {
             @include breakpoint-xs {
               margin-left: 0;
               padding: 0;
+              border: 0;
+              border-radius: 0;
+              background: transparent;
+              margin-left: 20px;
             }
           }
         }
@@ -76,6 +115,7 @@ header {
 
     @include breakpoint-xs {
       order: -1;
+      flex-flow: row-reverse;
     }
 
     &__logo {
@@ -88,6 +128,17 @@ header {
     }
 
     &__menu {
+      @include breakpoint-xs {
+        margin-left: 44px;
+      }
+
+      @include breakpoint-xs {
+        > nav {
+          height: 10vh;
+          position: relative;
+        }
+      }
+
       ul {
         display: flex;
 
@@ -97,13 +148,9 @@ header {
           a {
             text-decoration: none;
             color: $dark-color-primary;
-            font-family: 'Raleway', sans-serif;
+            font-family: "Raleway", sans-serif;
           }
         }
-      }
-
-      @include breakpoint-xs { 
-        display: none;
       }
     }
   }
