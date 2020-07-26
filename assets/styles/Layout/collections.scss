@@ -1,0 +1,99 @@
+.collections {
+  font-family: "Raleway", sans-serif;
+  background-color: $yellow-color-primary;
+  // z-index: 1;
+  // position: relative;
+  @include breakpoint-xs {
+    padding: 41px 0 50px;
+  }
+
+  &__title {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+    @include breakpoint-xs {
+      font-size: 42px;
+    }
+  }
+
+  &__list {
+    padding-top: 93px;
+
+    @include breakpoint-xs {
+      padding-top: 22px;
+      display: flex;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar { 
+        display: none; 
+      }
+    }
+
+    &__item {
+      margin-bottom: 49px;
+
+      @include breakpoint-xs {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+
+      > a {
+        text-decoration: none;
+        font-size: 24px;
+        color: $dark-color-primary;
+        letter-spacing: 4px;
+
+        &:hover {
+          color: #8D6638;
+        }
+
+        @include breakpoint-xs {
+          font-size: 14px;
+        }
+      }
+
+      &--link {
+        > a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $dark-color-primary;
+          letter-spacing: 2px;
+          margin-top: 20px;
+
+          @include breakpoint-xs {
+            font-size: 14px;
+          }
+          
+
+          &::before {
+            content: url('/assets/images/arrow-full-black.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 45px;
+            width: 45px;
+            margin-right: 12px;
+          }
+        }
+      }
+
+      &__image {
+        content: url('/assets/images/collections-image-1.png');  
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+
+        @include breakpoint-xs {
+          width: 280px;
+          height: 200px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
