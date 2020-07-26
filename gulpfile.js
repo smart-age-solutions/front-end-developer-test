@@ -17,7 +17,7 @@ gulp.task('sass', function () {
     .pipe(sass({
       outputStyle: 'compressed'
     }).on('error', sass.logError))
-    .pipe(gulp.dest('public/style/'))
+    .pipe(gulp.dest('public/assets/styles/'))
     .pipe(livereload());
 });
 
@@ -34,7 +34,7 @@ gulp.task('compress', function () {
       exclude: ['tasks'],
       ignoreFiles: ['.combo.js', '-min.js']
     }))
-    .pipe(gulp.dest('public/scripts/'))
+    .pipe(gulp.dest('public/assets/scripts/'))
     .pipe(livereload());
 });
 
@@ -47,7 +47,7 @@ gulp.task('htmlmin', () => {
 gulp.task('imagemin', function(){
 	return gulp.src('assets/images/*')
 	.pipe(imagemin())
-	.pipe(gulp.dest('public/images/'));
+	.pipe(gulp.dest('public/assets/images/'));
 });	
 
 gulp.task('watch', function () {
