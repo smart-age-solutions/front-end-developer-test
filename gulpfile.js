@@ -5,10 +5,11 @@ const concat = require('gulp-concat');
 const livereload = require('gulp-livereload');
 const minify = require('gulp-minify');
 const imagemin = require('gulp-imagemin');
+const htmlmin = require('gulp-htmlmin');
 const webserver = require('gulp-webserver');
 const babel = require('gulp-babel');
 
-gulp.task('default', ['webserver', 'sass', 'imagemin', 'watch', 'compress']);
+gulp.task('default', ['webserver', 'sass', 'imagemin', 'watch', 'compress', 'htmlmin']);
 
 gulp.task('sass', function () {
   return gulp.src('assets/styles/**/*.scss')
@@ -35,6 +36,12 @@ gulp.task('compress', function () {
     }))
     .pipe(gulp.dest('public/scripts/'))
     .pipe(livereload());
+});
+
+gulp.task('htmlmin', () => {
+  return gulp.src('*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('public'));
 });
 
 gulp.task('imagemin', function(){
