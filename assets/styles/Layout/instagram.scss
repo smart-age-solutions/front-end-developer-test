@@ -28,19 +28,17 @@
     }
   }
 
-  &__carousel {
-    &__images {
-      display: flex;
-      align-items: center;
-      overflow-y: hidden;
-      overflow-x: scroll;
-      min-height: 450px;
-      transition: 500ms;
-      scroll-behavior: smooth;
+  .multi-carousel {
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    min-height: 450px;
+    transition: 500ms;
+    scroll-behavior: smooth;
 
-      &::-webkit-scrollbar {
-        display: none;
-      }
+    &::-webkit-scrollbar {
+      display: none;
     }
   }
 
