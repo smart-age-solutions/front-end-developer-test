@@ -58,3 +58,8 @@ Layout is available in Figma at https://www.figma.com/file/wei6C30TmYiPijc7M5rRe
 ​
 ​
 Questions, talk to the dev team dev@smartagesolutions.com;
+
+##### CODE EXECUTION INSTRUCTIONS
+Clone the repository;
+Run 'npm install' inside folder;
+Than run 'npm run start'

@@ -1,0 +1,49 @@
+{
+  "name": "front-end-developer-test",
+  "version": "1.0.0",
+  "description": "​\r Smart Age is a full service digital marketing agency based in New York City and Rio de Janeiro. Our products and services are constantly evolving to fit the needs of the ever-changing tech landscape. Our job is to help you create the future for your brand and business.\r ​\r We're looking for front-end developers for our Brazil development team with knowledge in HTML, CSS e Javascript to work with Magento ecommerce.\r ​\r If you want to work or learn about Magento ecommerce feel free to apply!\r ​\r ​\r ##### Experience:\r * HTML, CSS;\r * JavaScript and jQuery;\r * Git;\r * Sass/less;\r * Gulp or Grunt;\r * Responsive web design;\r ​\r ​\r ##### Nice to have:\r * Magento ecommerce;\r * Knockout.js\r * CMS experience;\r * SEO;\r * PHP;\r * Bootstrap;\r ​\r ​\r #### Instructions:\r Fork this repository and send us a pull request. We'll review it and get back to you in order to talk about your code!\r ​\r * You need to code the layout according to the Figma link below;\r * Update README.md with your code execution instructions;\r * Make a pull request;\r ​\r ​\r ##### Layout:\r Layout is available in Figma at https://www.figma.com/file/wei6C30TmYiPijc7M5rRe0/Vendor-Front-end-test.\r ​\r ​\r ##### Must have:\r * HTML, CSS, JavaScript;\r * Responsive;\r * Coding Standards;\r ​\r ​\r ##### Should have:\r * Gulp, Grunt or Webpack;\r * SEO;\r * Optimizations;\r ​\r ​\r ##### Bonus\r * Javascript without plugins;\r * Animations;\r * JavaScript module bundler;\r * Accessibility;\r * CSS stands: OOCSS, ACSS, BEM, SMACSS;\r ​\r ​\r Questions, talk to the dev team dev@smartagesolutions.com;",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariaclaramussi/front-end-developer-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariaclaramussi/front-end-developer-test/issues"
+  },
+  "homepage": "https://github.com/mariaclaramussi/front-end-developer-test#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.6.0",
+    "expose-loader": "^1.0.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.19",
+    "popper.js": "^1.16.1",
+    "precss": "^4.0.0",
+    "slick-carousel": "^1.8.1"
+  }
+}
