@@ -1,0 +1,131 @@
+.instagram {
+  padding: 60px 0;
+  background-color: $light-color-secondary;
+
+  &__title {
+    text-align: center;
+    font-family: "Playfair Display", sans-serif;
+
+    > h3 {
+      font-size: 80px;
+      font-weight: bold;
+      letter-spacing: 6px;
+      color: #472138;
+
+      @include breakpoint-xs {
+        font-size: 42px;
+      }
+
+      &::before {
+        content: url("/assets/images/instagram-orange.svg");
+        margin-right: 20px;
+      }
+    }
+
+    > p {
+      font-size: 36px;
+      margin: 20px 0;
+    }
+  }
+
+  &__carousel {
+    &__images {
+      display: flex;
+      align-items: center;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      min-height: 450px;
+      transition: 500ms;
+      scroll-behavior: smooth;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  .wrap {
+    display: inline-block;
+    position: relative;
+    height: 360px;
+    padding: 0 5px;
+    width: fit-content;
+    margin: 0 1px;
+    cursor: pointer;
+    transition: height 500ms;
+
+    &:hover {
+      height: 450px;
+    }
+
+    &__image {
+      object-fit: contain;
+      height: 100%;
+    }
+  }
+
+  .scroll__button {
+    position: absolute;
+    height: 187px;
+    width: 43px;
+    background-color: #0f0f0f4b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+
+  .right__arrow {
+    right: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+    @include breakpoint-xs {
+      opacity: 0;
+    }
+
+    @include breakpoint-md {
+      opacity: 1;
+    }
+  }
+
+  .left__arrow {
+    left: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+    @include breakpoint-xs {
+      opacity: 0;
+    }
+
+    @include breakpoint-md {
+      opacity: 1;
+    }
+  }
+
+  .space {
+    min-width: 155px;
+    height: 126px;
+  }
+
+  .arrow {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+}
