@@ -1,0 +1,51 @@
+@include breakpoint-xs {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+  }
+
+  .header__brand__menu__burger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .header__brand__menu__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    background: $light-color-primary;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(0 at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+
+    &.open {
+      clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+    }
+  }
+
+  .landing {
+    flex-direction: column;
+  }
+
+  .header__brand__menu__list li {
+    a {
+      font-size: 24px;
+    }
+  }
+
+  li.fade {
+    opacity: 1;
+  }
+}

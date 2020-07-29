@@ -1,0 +1,75 @@
+.category {
+  .multi-carousel {
+    @include breakpoint-xs {
+      min-height: 100%;
+      padding-bottom: 30px;
+    }
+  }
+
+  .wrap {
+    @include breakpoint-xs {
+      height: 100%;
+      padding-left: 0;
+      padding-right: 5px;
+    }
+
+    &__image {
+      @include breakpoint-xs {
+        height: 170px;
+      }
+    } 
+
+    &:hover {
+      @include breakpoint-xs {
+        height: 100%;
+      }
+
+      .poster_title {
+        opacity: 0;
+        transition: opacity 100ms;
+      }
+
+      .poster_info {
+        opacity: 1;
+        transition: opacity 2000ms;
+      }
+    }
+  }
+
+  &__info {
+    position: absolute;
+    left: calc(33% - 100px);
+    bottom: 40%;
+    color: $light-color-primary;
+    font-weight: 300;
+    font-size: 0.75rem;
+    width: 250px;
+    transition: opacity 100ms;
+
+    @include breakpoint-xs {
+      left: calc(50% - 100px);
+      bottom: 33%;
+    }
+
+    > p {
+      font-family: "Raleway", sans-serif;
+      font-size: 24px;
+      letter-spacing: 3px;
+
+      @include breakpoint-xs {
+        font-size: 18px;
+      }
+    }
+
+    > h4 {
+      font-family: "Playfair Display", sans-serif;
+      font-weight: bold;
+      font-size: 96px;
+      letter-spacing: 10px;
+
+      @include breakpoint-xs {
+        font-size: 60px;
+      }
+    }
+  }
+}

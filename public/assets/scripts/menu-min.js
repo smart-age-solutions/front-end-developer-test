@@ -1,0 +1,1 @@
+"use strict";var burger=document.querySelector(".header__brand__menu__burger"),listLinks=document.querySelector(".header__brand__menu__list"),links=document.querySelectorAll(".header__brand__menu__list li");burger.addEventListener("click",function(){listLinks.classList.toggle("open"),links.forEach(function(e){e.classList.toggle("fade")})});

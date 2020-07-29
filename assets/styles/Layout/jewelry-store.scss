@@ -1,0 +1,55 @@
+.store {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 96px 0 112px;
+
+  &__latest {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  &__title {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: $yellow-color-primary;
+    letter-spacing: 8px;
+    margin: 12px 0 32px;
+
+    @include breakpoint-xs {
+      text-align: center;
+      letter-spacing: 2px;
+      font-size: 42px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    @include breakpoint-xs {
+      text-align: center;
+      font-size: 16px;
+      padding: 0 34px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: $dark-color-secondary;
+    margin: 38px 0 0;
+    
+    &::before {
+      content: url('/assets/images/arrow-black.svg');
+      margin-right: 12px;
+    }
+  }
+}

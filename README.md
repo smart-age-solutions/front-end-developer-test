@@ -1,60 +1,54 @@
-# Smart Age Solutions Front-end Developer Test
-​
-Smart Age is a full service digital marketing agency based in New York City and Rio de Janeiro. Our products and services are constantly evolving to fit the needs of the ever-changing tech landscape. Our job is to help you create the future for your brand and business.
-​
-We're looking for front-end developers for our Brazil development team with knowledge in HTML, CSS e Javascript to work with Magento ecommerce.
-​
-If you want to work or learn about Magento ecommerce feel free to apply!
-​
-​
-##### Experience:
-* HTML, CSS;
-* JavaScript and jQuery;
-* Git;
-* Sass/less;
-* Gulp or Grunt;
-* Responsive web design;
-​
-​
-##### Nice to have:
-* Magento ecommerce;
-* Knockout.js
-* CMS experience;
-* SEO;
-* PHP;
-* Bootstrap;
-​
-​
-#### Instructions:
-Fork this repository and send us a pull request. We'll review it and get back to you in order to talk about your code!
-​
-* You need to code the layout according to the Figma link below;
-* Update README.md with your code execution instructions;
-* Make a pull request;
-​
-​
-##### Layout:
-Layout is available in Figma at https://www.figma.com/file/wei6C30TmYiPijc7M5rRe0/Vendor-Front-end-test.
-​
-​
-##### Must have:
-* HTML, CSS, JavaScript;
-* Responsive;
-* Coding Standards;
-​
-​
-##### Should have:
-* Gulp, Grunt or Webpack;
-* SEO;
-* Optimizations;
-​
-​
-##### Bonus
-* Javascript without plugins;
-* Animations;
-* JavaScript module bundler;
-* Accessibility;
-* CSS stands: OOCSS, ACSS, BEM, SMACSS;
-​
-​
-Questions, talk to the dev team dev@smartagesolutions.com;
+# Smart Age Solutions
+
+Projeto desenvolvido em HTML, CSS, JavaScript, utilizando ES6 e o task runner Gulp.
+
+Para padronização das classes foi utilizada a metodologia BEM e para arquitetura o SMACSS.
+
+As instruções abaixo fornecem uma cópia do projeto em funcionamento na sua máquina local.
+
+## Pré - requisitos
+
+Node.js (verificar versão)
+
+`` 
+https://nodejs.org/en/download/
+`` 
+
+Gulp
+
+`` 
+npm install -g gulp-cli
+`` 
+
+## Instalação
+
+1 - Fazer o clone do projeto:
+
+`` 
+git clone git@github.com:ldrbraga/front-end-developer-test.git && cd front-end-developer-test
+`` 
+
+2 - Executar a instalação das dependências:
+
+`` 
+yarn
+`` 
+
+3 - Após instaladas as dependências, rodar o task runner: 
+
+`` 
+gulp
+`` 
+
+4 - O projeto irá abrir na seguinte url:
+
+`` 
+http://localhost:8000/
+`` 
+
+## Demo 
+
+Uma demo do projeto também está disponível no Netlify. :)
+
+https://smartage.netlify.app/
+

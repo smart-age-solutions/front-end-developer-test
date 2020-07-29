@@ -1,0 +1,131 @@
+.about {
+  padding-top: 152px;
+  padding-bottom: 160px;
+
+  @include breakpoint-xs {
+    padding-top: 45px;
+    padding-bottom: 20px;
+  }
+
+  @include breakpoint-md {
+   padding: 100px 0;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 34px;
+
+    > span {
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+      letter-spacing: 4px;
+
+      @include breakpoint-xs {
+        font-size: 18px;
+      }
+    }
+
+    > h3 {
+      width: 480px;
+      font-family: "Playfair Display", sans-serif;
+      color: $yellow-color-primary;
+      font-size: 80px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: 10px 0;
+
+      @include breakpoint-xs {
+        width: 100%;
+        font-size: 42px;
+      }
+    }
+  }
+
+  &__cards {
+    &__list {
+      display: flex;
+      padding: 0 10px;
+
+      @include breakpoint-xs {
+        width: 100%;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar { 
+          display: none; 
+        }
+      }
+
+      > li {
+        position: relative;
+        width: 33.3%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 700px;
+
+        @include breakpoint-xs {
+          width: 100%;
+          padding: 142px;
+          height: 400px;
+        }
+
+        &:nth-child(2) {
+          margin: 40px 10px 0 10px;
+
+          @include breakpoint-xs {
+            margin-top: 0;
+          }
+        }
+
+        > div {
+          position: absolute;
+          bottom: -50px;
+          right: 0;
+          width: 95%;
+          padding: 45px 0 0 39px;
+          background-color: $light-color-primary;
+          
+          > span {
+            font-family: "Raleway", sans-serif;
+            font-size: 20px;
+            color: $yellow-color-primary;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            @include breakpoint-xs {
+              font-size: 16px;
+            }
+          }
+
+          > p {
+            font-family: "Playfair Display", sans-serif;
+            font-weight: bold;
+            font-size: 48px;
+            padding-right: 60px;
+            margin-top: 5px;
+
+            @include breakpoint-xs {
+              font-size: 36px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+
+      &--one {
+        background: url('/assets/images/about-1.png');
+      }
+
+      &--two {
+        background: url('/assets/images/about-2.png');
+      }
+
+      &--three {
+        background: url('/assets/images/about-3.png');
+      }
+    }
+  }
+}

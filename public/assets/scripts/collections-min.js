@@ -1,0 +1,1 @@
+"use strict";var links=document.querySelectorAll(".collections__list__item__link");links.forEach(function(e){e.addEventListener("click",function(e){e.preventDefault();var t=document.querySelector(".collections__list__item__image");t.classList.remove("active"),t.classList.add("active")})});
