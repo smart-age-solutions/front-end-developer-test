@@ -46,7 +46,7 @@
         display: inline-block;
         width: 150px;
         height: 1px;
-        background-color: #d5a368;
+        background-color: $yellow-color-primary;
         transform: rotate(270deg);
 
         @include breakpoint-xs {
@@ -168,7 +168,7 @@
   }
 
   .active {
-    border: 1px solid #d5a368;
+    border: 1px solid $yellow-color-primary;
   }
 
   .fade {

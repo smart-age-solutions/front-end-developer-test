@@ -32,7 +32,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #472138;
+    background-color: $purple-color-primary;
 
     @include breakpoint-xs {
       width: 100%;

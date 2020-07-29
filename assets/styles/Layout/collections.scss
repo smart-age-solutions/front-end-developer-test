@@ -54,14 +54,14 @@
         letter-spacing: 4px;
 
         &:hover {
-          color: #8d6638;
+          color: $yellow-color-secondary;
 
           &::after {
             content:"";
             display: inline-block;
             width: 110px;
             height: 1px;
-            background:#8D6638;
+            background: $yellow-color-secondary;
             margin-left: 60px;
           }
         }
