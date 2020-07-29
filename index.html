@@ -60,7 +60,45 @@
   </header>
 
   <main>
-    <section class="slider"></section>
+    <section class="slider">
+      <div class="counter">
+        <div class="dots">
+          <span class="dots__item" onclick="currentSlide(1)">1</span>
+          <span class="dots__item" onclick="currentSlide(2)">2</span>
+          <span class="dots__item" onclick="currentSlide(3)">3</span>
+        </div>
+
+        <div class="counter__message">
+          <p>Discover more</p> 
+        </div>
+      </div>
+
+      <div class="slides">
+        <div class="slides__item fade">
+          <img class="slides__item__image" src="./assets/images/slide-img.png" alt="Slide Image">
+          <div class="slides__text">
+            <p>Engagement Ring</p>
+            <a href="#">Explore</a>
+          </div>
+        </div>
+
+        <div class="slides__item fade">
+          <img class="slides__item__image" src="./assets/images/slide-img.png" alt="Slide Image">
+          <div class="slides__text">
+            <p>Slide 2</p>
+            <a href="#">Explore</a>
+          </div>
+        </div>
+
+        <div class="slides__item fade">
+          <img class="slides__item__image" src="./assets/images/slide-img.png" alt="Slide Image">
+          <div class="slides__text">
+            <p>Slide 3</p>
+            <a href="#">Explore</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="design">
       <div class="design__info">
@@ -447,6 +485,7 @@
   </footer>
 
   <script src="/public/assets/scripts/menu-min.js"></script>
+  <script src="/public/assets/scripts/slider-min.js"></script>
   <script src="/public/assets/scripts/collections-min.js"></script>
   <script src="/public/assets/scripts/multi-carousel-min.js"></script>
 </body>

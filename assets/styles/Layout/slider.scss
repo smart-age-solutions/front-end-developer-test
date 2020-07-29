@@ -1,0 +1,189 @@
+.slider {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid #dadada;
+  min-height: 640px;
+
+  @include breakpoint-xs {
+    min-height: 0;
+    flex-direction: column;
+  }
+
+  @include breakpoint-md {
+    flex-direction: row;
+    min-height: 777px;
+  }
+
+  .counter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+
+    .dots {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Raleway", sans-serif;
+      padding-top: 50px;
+
+      @include breakpoint-xs {
+        flex-direction: row;
+        padding: 20px 0 0;
+      }
+
+      @include breakpoint-md {
+        flex-direction: column;
+        padding: 50px 0 0;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 296px;
+        display: inline-block;
+        width: 150px;
+        height: 1px;
+        background-color: #d5a368;
+        transform: rotate(270deg);
+
+        @include breakpoint-xs {
+          display: none;
+        }
+
+        @include breakpoint-md {
+          display: block;
+        }
+      }
+
+      &__item {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        margin: 0 2px;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        padding-top: 10px;
+        transition: background-color 0.6s ease;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__message {
+      position: absolute;
+      bottom: 277px;
+      width: 225px;
+      transform: rotate(270deg);
+      font-size: 21px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+
+      @include breakpoint-xs {
+        display: none;
+      }
+
+      @include breakpoint-md {
+        display: block;
+      }
+    }
+  }
+
+  .slides {
+    @include breakpoint-xs {
+      order: -1;
+    }
+
+    @include breakpoint-md {
+      order: 1;
+    }
+
+    &__item {
+      display: none;
+
+      &__image {
+        width: 2000px;
+        max-width: 100%;
+        height: 777px;
+        vertical-align: middle;
+
+        @include breakpoint-xs {
+          width: 100%;
+          height: 275px;
+          order: -1;
+        }
+
+        @include breakpoint-md {
+          min-height: 640px;
+          width: 2000px;
+          max-width: 100%;
+        }
+      }
+    }
+
+    &__text {
+      position: absolute;
+      bottom: 74px;
+      left: 175px;
+
+      @include breakpoint-xs {
+        bottom: 93px;
+        left: 38px;
+      }
+
+      @include breakpoint-md {
+        bottom: 170px;
+        left: 175px;
+      }
+
+      > p {
+        font-family: "Playfair Display", sans-serif;
+        font-size: 80px;
+        font-weight: bold;
+        color: $light-color-primary;
+
+        @include breakpoint-xs {
+          font-size: 42px;
+        }
+      }
+
+      > a {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: $light-color-primary;
+        margin-top: 22px;
+
+        &::before {
+          content: url("/assets/images/arrow-white.svg");
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+  .active {
+    border: 1px solid #d5a368;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
