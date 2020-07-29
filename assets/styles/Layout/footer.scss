@@ -65,6 +65,10 @@
           font-size: 14px;
           color: $light-color-primary;
           letter-spacing: 2px;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -111,13 +115,18 @@
     &__button {
       > button {
         background-color: transparent;
-        border: 1px solid #767676; //REMOVE HEX COLOR
+        border: 1px solid #767676; 
         padding: 10px 60px;
         color: $light-color-primary;
         font-family: "Open Sans", sans-serif;
         font-size: 12px;
         letter-spacing: 2px;
         cursor: pointer;
+
+        &:hover {
+          background-color: $light-color-secondary;
+          color: $dark-color-primary;
+        }
 
         @include breakpoint-xs {
           padding: 10px 90px;
@@ -210,6 +219,10 @@
             text-decoration: none;
             margin: 0 20px;
             color: #999999;
+
+            &:hover {
+              text-decoration: underline;
+            }
 
             @include breakpoint-xs {
               margin: 0;
