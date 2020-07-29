@@ -1,0 +1,1 @@
+"use strict";var anchorLinks=document.querySelectorAll('.scrolling a[href^="#"]');anchorLinks.forEach(function(t){t.addEventListener("click",function(e){var r=t.getAttribute("href");document.querySelector(r).scrollIntoView({behavior:"smooth",block:"start"}),history.pushState(null,null,r),e.preventDefault()})});
