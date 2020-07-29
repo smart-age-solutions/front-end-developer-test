@@ -48,7 +48,7 @@ http://localhost:8000/
 
 ## Demo 
 
-Uma demo do projeto também está disponível no Github Pages. :)
+Uma demo do projeto também está disponível no Netlify. :)
 
 https://smartage.netlify.app/
 
