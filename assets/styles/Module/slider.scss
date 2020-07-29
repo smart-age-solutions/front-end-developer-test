@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   z-index: 1;
-  border-top: 1px solid #dadada;
+  border-top: 1px solid $gray-border;
   min-height: 640px;
 
   @include breakpoint-xs {
