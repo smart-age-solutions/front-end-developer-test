@@ -1,4 +1,4 @@
-# Codezone
+# Smart Age Solutions
 
 Projeto desenvolvido em HTML, CSS, JavaScript, utilizando ES6 e o task runner Gulp.
 
