@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/public/assets/styles/style.min.css" />
+  <link rel="stylesheet" href="public/assets/styles/style.min.css" />
   <title>Smart Age Solutions Front-end Developer Test</title>
 </head>
 
 <body>
   <header>
     <div class="header__nav">
-      <div class="header__nav__find">
-        <button>Find a Store</button>
+      <div class="header__nav__find scrolling">
+        <a href="#store">Find a Store</a>
       </div>
 
       <div class="header__nav__icons">
@@ -48,11 +48,21 @@
             <div class="line"></div>
           </div>
           <ul class="header__brand__menu__list">
-            <li><a href="#">COLLECTIONS</a></li>
-            <li><a href="#">CATEGORIES</a></li>
-            <li><a href="#">STORES</a></li>
-            <li><a href="#">OUR STORY</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li class="header__brand__menu__list_link scrolling">
+              <a href="#collections">COLLECTIONS</a>
+            </li>
+            <li class="header__brand__menu__list_link scrolling">
+              <a href="#category">CATEGORIES</a>
+            </li>
+            <li class="header__brand__menu__list_link scrolling">
+              <a href="#store">STORES</a>
+            </li>
+            <li class="header__brand__menu__list_link scrolling">
+              <a href="#about">OUR STORY</a>
+            </li>
+            <li class="header__brand__menu__list_link scrolling">
+              <a href="#contact">CONTACT</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -75,7 +85,7 @@
 
       <div class="slides">
         <div class="slides__item fade">
-          <img class="slides__item__image" src="./assets/images/slide-img.png" alt="Slide Image">
+          <img class="slides__item__image" src="assets/images/slide-img.png" alt="Slide Image">
           <div class="slides__text">
             <p>Engagement Ring</p>
             <a href="#">Explore</a>
@@ -83,7 +93,7 @@
         </div>
 
         <div class="slides__item fade">
-          <img class="slides__item__image" src="./assets/images/slide-img.png" alt="Slide Image">
+          <img class="slides__item__image" src="assets/images/slide-img.png" alt="Slide Image">
           <div class="slides__text">
             <p>Slide 2</p>
             <a href="#">Explore</a>
@@ -91,7 +101,7 @@
         </div>
 
         <div class="slides__item fade">
-          <img class="slides__item__image" src="./assets/images/slide-img.png" alt="Slide Image">
+          <img class="slides__item__image" src="assets/images/slide-img.png" alt="Slide Image">
           <div class="slides__text">
             <p>Slide 3</p>
             <a href="#">Explore</a>
@@ -132,7 +142,7 @@
       </div>
     </section>
 
-    <section class="category">
+    <section class="category" id="category">
       <div class="multi-carousel">
         <div class="wrap">
           <img class="wrap__image" src="assets/images/category-bg.png" alt="Ring Image" />
@@ -220,7 +230,7 @@
 
     </section>
 
-    <section class="collections">
+    <section class="collections" id="collections">
       <div class="container">
         <div class="collections__title">
           <h3 class="">Collections</h3>
@@ -248,7 +258,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about__title">
         <span>ABOUT US</span>
         <h3>Excellence & Tradition </h3>
@@ -367,7 +377,7 @@
       </div>
     </section>
 
-    <section class="cta">
+    <section class="cta" id="store">
       <div class="cta__hero">
         <p>STORES</p>
         <h3>Find Store</h3>
@@ -377,22 +387,22 @@
   </main>
 
   <footer>
-    <section class="footer">
+    <section class="footer" id="contact">
       <div class="container">
         <div class="footer__menu">
           <nav class="footer__menu__nav">
             <ul class="footer__menu__sections">
-              <li>
-                <a href="#">COLLECTIONS</a>
+              <li class="scrolling">
+                <a href="#collections">COLLECTIONS</a>
               </li>
-              <li>
-                <a href="#">CATEGORIES</a>
+              <li class="scrolling">
+                <a href="#category">CATEGORIES</a>
               </li>
-              <li>
-                <a href="#">STORES</a>
+              <li class="scrolling">
+                <a href="#store">STORES</a>
               </li>
-              <li>
-                <a href="#">OUR STORY</a>
+              <li class="scrolling">
+                <a href="#about">OUR STORY</a>
               </li>
             </ul>
           </nav>
@@ -484,10 +494,11 @@
     </section>
   </footer>
 
-  <script src="/public/assets/scripts/menu-min.js"></script>
-  <script src="/public/assets/scripts/slider-min.js"></script>
-  <script src="/public/assets/scripts/collections-min.js"></script>
-  <script src="/public/assets/scripts/multi-carousel-min.js"></script>
+  <script src="public/assets/scripts/menu-min.js"></script>
+  <script src="public/assets/scripts/slider-min.js"></script>
+  <script src="public/assets/scripts/collections-min.js"></script>
+  <script src="public/assets/scripts/multi-carousel-min.js"></script>
+  <script src="public/assets/scripts/scroll-min.js"></script>
 </body>
 
 </html>

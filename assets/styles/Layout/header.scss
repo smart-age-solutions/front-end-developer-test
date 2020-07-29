@@ -11,13 +11,15 @@ header {
     margin: 15px 20px;
 
     &__find {
-      button {
+      a {
         display: flex;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
         background: transparent;
         border: 1px solid $border-color-gray-primary;
         font-family: "Raleway", sans-serif;
+        color: $dark-color-primary;
         font-weight: 500;
         letter-spacing: 2px;
         border-radius: 50px;
