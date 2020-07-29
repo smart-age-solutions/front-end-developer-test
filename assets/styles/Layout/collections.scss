@@ -1,10 +1,16 @@
 .collections {
   font-family: "Raleway", sans-serif;
   background-color: $yellow-color-primary;
-  // z-index: 1;
-  // position: relative;
+  padding: 175px 0 68px;
+
   @include breakpoint-xs {
     padding: 41px 0 50px;
+    min-height: 0;
+  }
+
+  > div {
+    position: relative;
+    z-index: 1;
   }
 
   &__title {
@@ -26,8 +32,8 @@
       display: flex;
       overflow-x: auto;
 
-      &::-webkit-scrollbar { 
-        display: none; 
+      &::-webkit-scrollbar {
+        display: none;
       }
     }
 
@@ -40,13 +46,24 @@
       }
 
       > a {
+        display: flex;
+        align-items: center;
         text-decoration: none;
         font-size: 24px;
         color: $dark-color-primary;
         letter-spacing: 4px;
 
         &:hover {
-          color: #8D6638;
+          color: #8d6638;
+
+          &::after {
+            content:"";
+            display: inline-block;
+            width: 110px;
+            height: 1px;
+            background:#8D6638;
+            margin-left: 60px;
+          }
         }
 
         @include breakpoint-xs {
@@ -58,7 +75,6 @@
         > a {
           display: flex;
           align-items: center;
-          justify-content: center;
           text-decoration: none;
           text-transform: uppercase;
           color: $dark-color-primary;
@@ -67,11 +83,11 @@
 
           @include breakpoint-xs {
             font-size: 14px;
+            justify-content: center;
           }
-          
 
           &::before {
-            content: url('/assets/images/arrow-full-black.svg');
+            content: url("/assets/images/arrow-full-black.svg");
             background-repeat: no-repeat;
             background-size: cover;
             height: 45px;
@@ -82,16 +98,28 @@
       }
 
       &__image {
-        content: url('/assets/images/collections-image-1.png');  
+        position: absolute;
+        top: -14px;
+        right: 0;
+        z-index: -1;
+        content: url("/assets/images/collections-image-1.png");
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%;
+        width: 810px;
         height: auto;
 
         @include breakpoint-xs {
+          position: static;
           width: 280px;
           height: 200px;
           margin-top: 10px;
+          display: block;
+        }
+      }
+
+      &__bg {
+        @include breakpoint-xs {
+          display: none;
         }
       }
     }
