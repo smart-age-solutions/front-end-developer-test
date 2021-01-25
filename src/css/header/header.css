@@ -1,0 +1,1 @@
+header{padding:22px 10px;display:flex;align-items:center}header .logo{display:flex;width:100%;justify-content:space-between;margin-left:10px}header .logo img{width:100%;max-width:159px;height:20px}header .logo .icons{display:flex}header .logo .icons span+span{margin-left:40px}
