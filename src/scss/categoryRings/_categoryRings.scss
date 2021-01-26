@@ -1,0 +1,71 @@
+.category-rings {
+  position: relative;
+  height: 700px;
+  &-image {    
+    img {
+      max-width: 100%;
+      height: 300px;     
+    }
+  }
+
+  .slick-slide {
+    position: relative;
+
+    .content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      span {
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.25em;
+        color: #FFFFFF;
+        display: block;
+      }
+
+      h2 {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 119.97%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.3em;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+
+
+  .control-arrow {
+    display: none;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  .category-rings .control-arrow {
+    display: block;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+
+  .category-rings {   
+    &-image {  
+      img {        
+        height: 100%;     
+      }
+    }
+  }
+}
