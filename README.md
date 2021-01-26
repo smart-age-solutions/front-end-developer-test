@@ -14,6 +14,10 @@
 * FOOTER []
 * FAZER VERSÃO DESKTOP. []
 
+
+# This site is runnig on Netlify, to see it:
+[Click here](https://smartage-renanlimabl.netlify.app/)
+
 # Smart Age Solutions Front-end Developer Test
 ​
 Smart Age is a full service digital marketing agency based in New York City and Rio de Janeiro. Our products and services are constantly evolving to fit the needs of the ever-changing tech landscape. Our job is to help you create the future for your brand and business.
