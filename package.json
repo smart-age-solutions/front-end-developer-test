@@ -4,6 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "gulp-babel": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "node-sass": "^5.0.0"
   },
