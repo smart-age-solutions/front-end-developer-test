@@ -26,3 +26,14 @@ ul {
 .white {
   color: #fff;
 }
+
+.circle-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #D5A368;
+  margin-right: 12px;
+}

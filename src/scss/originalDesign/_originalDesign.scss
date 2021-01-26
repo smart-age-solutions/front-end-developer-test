@@ -2,6 +2,8 @@
   width: 100%;
   background-color: #F9EFE4;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 
   &-content {
     width: 100%;
@@ -24,18 +26,7 @@
     }
   }
 
-  &-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: 1px solid #D5A368;
-    margin-right: 12px;
-  }
-
-  img {
+  & > img {
     max-width: 100%;
     object-fit: cover;
     position: relative;
