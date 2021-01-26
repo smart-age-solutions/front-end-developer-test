@@ -1,0 +1,38 @@
+.collections {
+  background-color: #D5A368;
+  padding: 45px 0;
+  
+  h4 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 119.97%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+
+  &-slider {
+    img {
+      max-width: 100%;
+    }
+
+    span {
+      display: inline-block;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.25em;
+      color: #000000;
+      margin-bottom: 5px;
+    }
+
+    [data-slick-index="-1"] {
+      opacity: 0 !important; 
+    }
+  }
+}
