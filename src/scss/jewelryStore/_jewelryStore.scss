@@ -1,0 +1,40 @@
+.jewelry-store {
+  margin-top: 5px;
+  padding: 45px 30px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+
+  h4 {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: Playfair Display;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #D5A368;
+  }
+
+  p {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 152.62%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 20px auto;
+    max-width: 274px;
+  }
+
+  .flex-v {
+    justify-content: center;
+  }
+}
