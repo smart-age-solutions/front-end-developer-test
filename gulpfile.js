@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var htmlmin = require('gulp-htmlmin');
 var babel = require('gulp-babel')
 
 sass.compiler = require('node-sass');
@@ -23,10 +24,13 @@ gulp.task('build', async function () {
     .pipe(await babel({
       presets: ['@babel/env']
     }))
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(gulp.dest('./dist/src/js'))
   gulp.src('./src/scss/**/*.scss')
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-    .pipe(gulp.dest('./dist/css'));
+    .pipe(gulp.dest('./dist/src/css'));
+  gulp.src('./index.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('./dist'))
 })
 
 gulp.task('watch', function () {
