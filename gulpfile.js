@@ -19,6 +19,11 @@ gulp.task('js', async function () {
     .pipe(gulp.dest('./dist/js'))
 })
 
+gulp.task('image', async function () {
+  gulp.src('./assets/**')
+    .pipe(await gulp.dest('./dist/assets/'))
+})
+
 gulp.task('build', async function () {
   gulp.src('./src/js/*.js')
     .pipe(await babel({
@@ -31,6 +36,8 @@ gulp.task('build', async function () {
   gulp.src('./index.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('./dist'))
+  gulp.src('./assets/**')
+    .pipe(await gulp.dest('./dist/assets/'))
 })
 
 gulp.task('watch', function () {
