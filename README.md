@@ -1,3 +1,19 @@
+## TODO
+* HEADER MOBILE [X]
+* TRANSFORMAR O BACKGROUND INICIAL EM IMG COM SLIDER. []
+* SESSÃO "THE ORIGINAL DESIGN" []
+* SESSÃO "JEWELRY STORE []
+* SESSÃO CLASSIC BRIDAL []
+* SLIDER CATEGORY RINGS []
+* SLIDER SELECTED FOR YOU []
+* SLIDER COLLECTIONS []
+* ABOUT US []
+* EVENTS []
+* REDES SOCIAIS []
+* FIND STORE []
+* FOOTER []
+* FAZER VERSÃO DESKTOP. []
+
 # Smart Age Solutions Front-end Developer Test
 ​
 Smart Age is a full service digital marketing agency based in New York City and Rio de Janeiro. Our products and services are constantly evolving to fit the needs of the ever-changing tech landscape. Our job is to help you create the future for your brand and business.
