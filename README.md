@@ -1,3 +1,14 @@
+# This site is runnig on Netlify, to see it:
+[Click here](https://smartage-renanlimabl.netlify.app/)
+
+# techs: 
+* VANILLA JS FOR THE MAIN SLIDER.
+* GULP FOR GENERATE ES5 JAVASCRIPT, CONFIGURATION TO BUILD A MINIFY PRODUCT, TO SCSS, AND CONFIGURATION FOR CONTINUOS INTEGRATIONS WITH NETILIFY.
+* SCSS
+* MOBILE FIRST
+* NO FRAMEWORK FOR ALL CSS
+* JQUERY FOR SLIDERS WHERE USE SLICK-SLIDER.
+
 ## TODO
 * FAZER VERSÃO MOBILE. [X]
 * HEADER MOBILE MOBILE [X]
@@ -16,11 +27,7 @@
 * SESSÃO "THE ORIGINAL DESIGN" DESKTOP [X]
 * SESSÃO "JEWELRY STORE DESKTOP [X]
 * SESSÃO CLASSIC BRIDAL DESKTOP [X]
-* HEADER MOBILE DESKTOP []
-
-
-# This site is runnig on Netlify, to see it:
-[Click here](https://smartage-renanlimabl.netlify.app/)
+* HEADER MOBILE DESKTOP [X]
 
 # Smart Age Solutions Front-end Developer Test
 ​
