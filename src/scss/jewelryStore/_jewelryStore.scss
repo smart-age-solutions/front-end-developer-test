@@ -38,3 +38,13 @@
     justify-content: center;
   }
 }
+
+
+@media screen and (min-width: 768px) {
+  .jewelry-store {
+    padding: 95px 30px;
+  }
+  .jewelry-store p {
+    max-width: 779px;
+  }
+}
