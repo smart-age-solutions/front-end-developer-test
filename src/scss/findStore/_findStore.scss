@@ -1,0 +1,55 @@
+.find-store {
+  position: relative;
+  > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .description {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    span {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      letter-spacing: 0.25em;
+      color: #D5A368;
+      text-transform: uppercase;
+      display: block;
+    }
+    
+    h4 {
+      font-family: Playfair Display;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 80px;
+      line-height: 96px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.1em;
+      color: #FFFFFF;
+    }
+
+    .flex-v {
+      justify-content: center;
+      margin: 25px 0;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
