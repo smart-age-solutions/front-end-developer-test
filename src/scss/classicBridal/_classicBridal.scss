@@ -1,6 +1,11 @@
 .classic-bridal {
-  background: #472138;
-  padding: 45px 35px;
+  background: #472138;  
+  display: flex;
+  flex-direction: column;
+
+  &-description {
+    padding: 35px 35px 60px;
+  }
 
   h4 {
     font-family: Playfair Display;
@@ -21,5 +26,38 @@
     letter-spacing: 0.1em;
     margin: 20px 0;
     color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .classic-bridal {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
+    &-description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 auto;
+
+      h4 {
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 96px;
+        max-width: 300px;
+        align-self: baseline;
+        letter-spacing: 0.1em;
+      }
+
+      p {
+        max-width: 574px;
+      }
+      
+      .flex-v {
+        align-self: baseline;
+      }
+    }
   }
 }
