@@ -80,3 +80,26 @@
     margin-right: 12px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .main-slider {
+    flex-direction: row;
+  }
+
+  .main-slider-unity {
+    margin-left: 80px;
+    height: 740px;
+    z-index: 10;
+  }
+
+  .main-slider .slider-pagination {
+    top: unset;
+    height: unset;
+    flex-direction: column;
+    width: 80px;
+  }
+
+  .main-slider .slider-pagination span+span {
+    margin-left: 0;
+  }
+}
