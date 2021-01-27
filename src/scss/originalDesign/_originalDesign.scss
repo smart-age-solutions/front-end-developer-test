@@ -33,3 +33,15 @@
     top: 5px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .original-design {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 240px;
+  }
+  .original-design-content {
+    max-width: unset;
+    padding: 35px 80px;
+  }
+}
