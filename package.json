@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/12afaelPereira/front-end-developer-test/issues"
   },
-  "homepage": "https://github.com/12afaelPereira/front-end-developer-test#readme"
+  "homepage": "https://github.com/12afaelPereira/front-end-developer-test#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
