@@ -1,0 +1,20 @@
+{
+  "name": "front-end-developer-test",
+  "version": "1.0.0",
+  "description": "​\r Smart Age is a full service digital marketing agency based in New York City and Rio de Janeiro. Our products and services are constantly evolving to fit the needs of the ever-changing tech landscape. Our job is to help you create the future for your brand and business.\r ​\r We're looking for front-end developers for our Brazil development team with knowledge in HTML, CSS e Javascript to work with Magento ecommerce.\r ​\r If you want to work or learn about Magento ecommerce feel free to apply!\r ​\r ​\r ##### Experience:\r * HTML, CSS;\r * JavaScript and jQuery;\r * Git;\r * Sass/less;\r * Gulp or Grunt;\r * Responsive web design;\r ​\r ​\r ##### Nice to have:\r * Magento ecommerce;\r * Knockout.js\r * CMS experience;\r * SEO;\r * PHP;\r * Bootstrap;\r ​\r ​\r #### Instructions:\r Fork this repository and send us a pull request. We'll review it and get back to you in order to talk about your code!\r ​\r * You need to code the layout according to the Figma link below;\r * Update README.md with your code execution instructions;\r * Make a pull request;\r ​\r ​\r ##### Layout:\r Layout is available in Figma at https://www.figma.com/file/wei6C30TmYiPijc7M5rRe0/Vendor-Front-end-test.\r ​\r ​\r ##### Must have:\r * HTML, CSS, JavaScript;\r * Responsive;\r * Coding Standards;\r ​\r ​\r ##### Should have:\r * Gulp, Grunt or Webpack;\r * SEO;\r * Optimizations;\r ​\r ​\r ##### Bonus\r * Javascript without plugins;\r * Animations;\r * JavaScript module bundler;\r * Accessibility;\r * CSS stands: OOCSS, ACSS, BEM, SMACSS;\r ​\r ​\r Questions, talk to the dev team dev@smartagesolutions.com;",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/12afaelPereira/front-end-developer-test.git"
+  },
+  "keywords": [],
+  "author": "Rafael Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/12afaelPereira/front-end-developer-test/issues"
+  },
+  "homepage": "https://github.com/12afaelPereira/front-end-developer-test#readme"
+}
