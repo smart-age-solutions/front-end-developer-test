@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/12afaelPereira/front-end-developer-test#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0"
   }
