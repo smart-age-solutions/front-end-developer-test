@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front end developer test</title>
+    <title>Smart Age</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
     <header>
+        
         <!-- <span class="logo">
             <img src="#" alt="Smart Age" class="logo__img">
         </span>
@@ -19,11 +20,11 @@
     <section class="design">
         <div class="design-content">
             <h3 class="design-content__title">The original Design</h3>
-            <p class="design-content__text">Inspired by a spectacular historical legacy and the most refined glamour of the world today.</p>
-            <div class="design-content__follow-link">
-                <button class="btn-circle--gold">button</button>
-                <span class="design-content__follow-link-description">Explore</span>
-            </div>
+            <p class="design-content__description">Inspired by a spectacular historical legacy and the most refined glamour of the world today.</p>
+            <a href="#" class="design-content-follow-link">
+                <img src="#" alt="button" class="design-content-follow-link__image">
+                <h4 class="design-content-follow-link__description text--uppercase">Explore</h4>
+            </a>
         </div>
         <div class="design-presentation">
             <img src="#" alt="design presentation">
@@ -35,10 +36,10 @@
             <p class="jewelry-store-content__text">Discover all that’s new, brilliant and beautiful in the world of Brand's Name.
             </p>
         </div>
-        <div class="jewelry-store-follow-link">
-            <button class="jewelry-store-follow-link__button btn-circle--gold">button</button>
-            <span class="jewelry-store-follow-link__description">See more</span>
-        </div>
+        <a href="#" class="jewelry-store-follow-link">
+            <img src="#" alt="button" class="jewelry-store-follow-link__image">
+            <h4 class="jewelry-store-follow-link__description text--uppercase">See more</h4>
+        </a>
     </section>
     <section class="classic-bridal">
         <div class="classic-bridal-presentation">
@@ -48,10 +49,10 @@
             <h3 class="classic-bridal-content__title">Classic Bridal</h3>
             <p class="classic-bridal-content__text">Our extraordinary diamonds are chosen to celebrate a love, a hope and a passion. Brilliantly capturing our passion for diamonds, a member of the family individually hand-selects each stone within our bridal collection, so you can fall in love with a diamond for eternity.</p>
         </div>
-        <div class="classic-bridal-follow-link">
-            <button class="classic-bridal-follow-link__button btn-circle--gold">button</button>
-            <span class="classic-bridal-follow-link__description">See more</span>
-        </div>
+        <a href="#" class="classic-bridal-follow-link">
+            <img src="#" alt="button" class="classic-bridal-follow-link__image">
+            <h4 class="classic-bridal-follow-link__description text--uppercase">Shop Now</h4>
+        </a>
     </section>
     <section class="category">
         <div class="slider">slider</div>
@@ -68,15 +69,15 @@
             <h3 class="collections-content__title">Collections</h3>
             <div class="slider">slider</div>
         </div>
-        <div class="collections-follow-link">
-            <button class="collections-follow-link__button btn-circle--gold">button</button>
-            <span class="collections-follow-link__description">See more</span>
-        </div>
+        <a href="#" class="collections-follow-link">
+            <img src="#" alt="button" class="collections-follow-link__image">
+            <h4 class="collections-follow-link__description text--uppercase">View All</h4>
+        </a>
     </section>
     <section class="about-us">
         <div class="about-us-content">
-            <h3 class="about-us-content-title text--uppercase">About Us</h3>
-            <img src="#" alt="about user">
+            <h3 class="about-us-content__title text--uppercase">About Us</h3>
+            <img src="#" alt="excelent tradition" class="about-us-content__image">
             <div class="slider">slider</div>
         </div>
     </section>
@@ -119,9 +120,75 @@
         </div>
     </secton>
     <section class="instagram">
-        <div class="instagram-title">
-            
+        <div class="instagram-content">
+            <div class="instagram-title">
+                <img src="#" alt="instagram logo" class="instagram-title__logo">
+                <h3 class="instagram-title__title"></h3>
+            </div>
+            <div class="instagram-user">@smartshop</div>
         </div>
+        <div class="instagram-slider">slider</div>
     </section>
+    <section class="stores">
+        <span class="stores__title text--uppercase">Stores</span>
+        <h3 class="stores__find-store">Find Store</h3>
+        <a href="#" class="stores-follow-link">
+            <img src="#" alt="Find Store" class="stores-follow-link__image">
+        </a>
+    </section>
+    <footer class="footer">
+        <div class="footer-contact">
+            <div class="contact-socials">
+                <ul class="socials-items">
+                    <li class="social__item"><a href="#" class="facebook">
+                            <img src="" alt="" class="social-facebook">
+                        </a></li>
+                    <li class="social__item"><a href="#" class="facebook">
+                            <img src="" alt="" class="social-facebook">
+                        </a></li>
+                    <li class="social__item"><a href="#" class="facebook">
+                            <img src="" alt="" class="social-facebook">
+                        </a></li>
+                </ul>
+            </div>
+            <div class="contact-contact-us">
+                <a href="#" class="contact-us__link">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-newsletter">
+            <h3 class="newsletter__title">Sign up for our newsletter</h3>
+            <form action="#" class="newsletter-form">
+                <input type="text" placeholder="Enter your e-mail" class="newsletter-form__input">
+                <input type="button" value="Subscribe" class="newsletter-form__button">
+            </form>
+        </div>
+        <div class="footer-policies">
+            <nav class="policies">
+                <ul>
+                    <li class="policy__item"><a href="#">Privacy Policy</a></li>
+                    <li class="policy__item"><a href="#">Return and Exchanges</a></li>
+                    <li class="policy__item"><a href="#">Track Order</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- contact and support -->
+
+        <div class="footer-payment">
+            <h4 class="payment-methods-title text--uppercase">Payment Methods</h4>
+            <ul class="payment-method">
+                <li class="mastercard"><a href="#"><img src="#" alt="mastercard"></a></li>
+                <li class="visa"><a href="#"><img src="#" alt="visa"></a></li>
+                <li class="discover"><a href="#"><img src="#" alt="discover"></a></li>
+                <li class="paypal"><a href="#"><img src="#" alt="paypal"></a></li>
+                <li class="american-express"><a href="#"><img src="#" alt="american express"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-copyright">
+            <span class="footer__copyright">Smart Age Solutions, © 2019 | MADE WITH LOVE BY SMART AGE SOLUTIONS</span>
+            <a href="#" class="footer__logo"><img src="#" alt="logo"></a>
+        </div>
+    </footer>
 </body>
 </html>
