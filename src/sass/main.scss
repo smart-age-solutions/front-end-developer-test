@@ -1,7 +1,18 @@
-*{
-    color: rgb(255, 255, 255);
-}
-body{
-    background: rgb(65, 119, 94);
+@charset 'utf-8';
 
-}
+// 1. Configuration
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+ 
+// 2. Base stuff
+@import
+  'base/reset',
+  'base/fonts',
+  'base/typography';
+
+// 3. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';

@@ -6,7 +6,7 @@ const browserSync = require('browser-sync').create();
 
 //compile sass to css and move to dist
 function scssTask(){
-    return src('./src/sass/**/*.scss')
+    return src('./src/sass/main.scss')
         .pipe(sass())
         .pipe(dest('dist/css'));
 }
