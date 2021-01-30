@@ -1,6 +1,7 @@
-const {src, series, dest, watch} = require('gulp');
 //const gulp = require('gulp');
+const {src, series, dest, watch} = require('gulp');
 const sass = require('gulp-sass');
+const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 
 
@@ -11,7 +12,29 @@ function scssTask(){
         .pipe(dest('dist/css'));
 }
 
-//copy and move html to dist
+//compress png files and move to dist
+function pngTask(){
+    return src('./src/images/*.png')
+        .pipe(imagemin({
+            optimizationLevel: 5
+        }))
+        .pipe(dest('dist/images'));
+}
+
+//compress svg files and move to dist
+function svgTask(){
+    return src('./src/svg/*.svg')
+        .pipe(imagemin({
+            svgoPlugins: [
+                {
+                    removeViewBox: true
+                }
+            ]
+        }))
+        .pipe(dest('dist/svg'));
+}
+
+//copy html and move to dist
 function copyHtml(){
     return src('./src/*.html')
         .pipe(dest('dist'));
@@ -40,7 +63,9 @@ function watchTask(){
 }
 
 exports.default = series(
-    scssTask, 
+    scssTask,
+    pngTask,
+    svgTask,
     copyHtml,
     browserSyncServe,
     watchTask
