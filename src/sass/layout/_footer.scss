@@ -1,0 +1,11 @@
+@import
+  'abstracts/variables';
+
+.footer{
+    
+    background: $black-light-1;
+
+    .footer-copyright{
+        background: $black-light-2;
+    }
+}
