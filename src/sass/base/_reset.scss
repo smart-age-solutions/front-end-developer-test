@@ -4,8 +4,33 @@
     
     outline: 0;
     box-sizing: border-box;
+
+    // // playfair
+    // font-family: 'Playfair Display', serif;
+    // font-weight: 400;
+    // font-weight: 700;
+    // font-weight: 900;
+
+    // // raleway
+    // font-family: 'Raleway', sans-serif;
+    // font-weight: 300;
+    // font-weight: 400;
 }
 
 a{
     text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
