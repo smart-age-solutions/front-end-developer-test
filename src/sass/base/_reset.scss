@@ -1,3 +1,7 @@
+@import
+  'abstracts/mixins';
+
+
 *{
     margin: 0;
     padding: 0;
@@ -26,11 +30,15 @@ li{
 }
 
 h2{
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
+    @include font('Playfair Display', serif, normal, 700, 42px);
+    letter-spacing: 0.1em;
 }
 
 h3{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    @include font('Raleway', sans-serif, normal, 400, 18px);
+    letter-spacing: 0.25em;
+}
+
+.text--uppercase{
+    text-transform: uppercase;
 }
