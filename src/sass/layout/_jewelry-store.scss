@@ -2,5 +2,44 @@
   'abstracts/variables';
 
 .jewelry-store{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 49px;
+
+    .jewelry-store-content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .jewelry-store-content__latest-from{
+        margin-top: 45px;
+      }
+
+      .jewelry-store-content__title{
+        color: $gold;
+      }
+
+      .jewelry-store-content__text{
+        width: 247px;
+        margin-top: 5px;
+        margin-bottom: 12px;
+
+        @include font('Raleway', sans-serif, normal, 400, 16px);
+        letter-spacing: 0.1em;
+        text-align: center;
+        
+
+      }
+    }
+    .jewelry-store-follow-link{
+      width: 150px;
+      display: flex;
+      align-items: center;
+
+      .jewelry-store-follow-link__image{
+        margin-right: 12px;
+      }
+    }
 }
