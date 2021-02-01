@@ -3,4 +3,42 @@
 
 .design{
     background: $yellow-light;
+
+    .design-content{
+      padding-top: 37px;
+      margin-left: 25px;
+      margin-right: 40px;
+
+      .design-content__description{
+        @include font('Raleway', sans-serif, normal, 400, 14px);
+        letter-spacing: 0.1em;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      .design-content-follow-link{
+        margin-bottom: 30px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+
+        .design-content-follow-link__image{
+          margin-right: 12px;
+        }
+      }
+    }
+    .design-image{
+      min-width: 375px;
+
+      .design-image__image{
+        width: 100%;
+      }
+    }
 }
+
+// @media (min-width: 834px){
+//   .design{
+//     display: flex;
+//   }
+// }
