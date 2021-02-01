@@ -3,4 +3,46 @@
 
 .classic-bridal{
     background: $violet-dark;
+
+    .classic-bridal-image{
+      // min-width: 375px;
+
+      .classic-bridal-image__image{
+        width: 100%;
+      }
+    }
+
+    .classic-bridal-content{
+      width: 303px;
+      margin: 0 auto;
+
+      padding-top: 35px;
+      padding-bottom: 35px;
+
+
+      .classic-bridal-content__title{
+        color: $gold;
+      }
+      .classic-bridal-content__description{
+        @include font('Raleway', sans-serif, normal, 400, 16px);
+        letter-spacing: 0.1em;
+        line-height: 24px;
+        color: $white;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .classic-bridal-follow-link{
+        // margin-bottom: 30px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        color: $white;
+
+        .classic-bridal-follow-link__image{
+          margin-right: 12px;
+        }
+      }
+
+    }
 }
