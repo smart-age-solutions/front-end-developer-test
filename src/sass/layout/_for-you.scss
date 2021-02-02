@@ -3,4 +3,44 @@
 
 .for-you{
     
+  .for-you-content{
+    margin-top: 30px;
+
+    // text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .for-you-content__shop{
+
+    }
+
+    .for-you-content__title{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 216px;
+      text-align: center;
+      line-height: 42px;
+      color: $violet-dark;
+    }
+  }
+
+  .for-you-carrousel{
+    
+
+    .for-you-carrousel-item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .carrousel__image{
+        width: 70%;
+      }
+      .carrousel__description{
+        @include font('Raleway', sans-serif, normal, 300, 18px);
+        letter-spacing: 0.1em;
+        text-align: center;
+      }
+    }
+  }
+  
 }
