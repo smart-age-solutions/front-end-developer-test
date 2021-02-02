@@ -4,13 +4,12 @@
 
 .category{
     
-
     .category-carrousel-item{
         background-image: url('../../images/category-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
 
-        margin-right: 20px;
+        margin-right: 0.5%;
 
         .carrousel-follow-link{
             padding-top: 100px;
@@ -22,10 +21,6 @@
             justify-content: center;
 
             color: $white;
-
-            // .carrousel__image{
-            //     width: 80%;
-            // }
         }
     }
 }
