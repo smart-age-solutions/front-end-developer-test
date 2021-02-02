@@ -68,7 +68,7 @@ function browserSyncReload(cb){
 //watch tasks
 function watchTask(){
     watch('./src/*.html', series(browserSyncReload, copyHtml));
-    watch(['./src/sass/**/*.scss'], series(scssTask, jsTask, browserSyncReload));
+    watch(['./src/sass/**/*.scss', './src/js/*.js'], series(scssTask, jsTask, browserSyncReload));
 }
 
 exports.default = series(
