@@ -1,6 +1,7 @@
 //const gulp = require('gulp');
 const {src, series, dest, watch} = require('gulp');
 const sass = require('gulp-sass');
+const prefix = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const browserSync = require('browser-sync').create();
 
@@ -9,6 +10,7 @@ const browserSync = require('browser-sync').create();
 function scssTask(){
     return src('./src/sass/main.scss')
         .pipe(sass())
+        .pipe(prefix('last 2 version'))
         .pipe(dest('dist/css'));
 }
 
@@ -64,8 +66,8 @@ function watchTask(){
 
 exports.default = series(
     scssTask,
-    pngTask,
-    svgTask,
+    // pngTask,
+    // svgTask,
     copyHtml,
     browserSyncServe,
     watchTask
