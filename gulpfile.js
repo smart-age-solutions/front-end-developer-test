@@ -3,6 +3,7 @@ const {src, series, dest, watch} = require('gulp');
 const sass = require('gulp-sass');
 const prefix = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
+const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 
 
@@ -42,6 +43,12 @@ function copyHtml(){
         .pipe(dest('dist'));
 }
 
+function jsTask(){
+    return src('./src/js/*.js')
+        .pipe(concat('all.js'))
+        .pipe(dest('dist/js'));
+}
+
 //config browserSync
 function browserSyncServe(cb){
     browserSync.init({
@@ -61,11 +68,12 @@ function browserSyncReload(cb){
 //watch tasks
 function watchTask(){
     watch('./src/*.html', series(browserSyncReload, copyHtml));
-    watch(['./src/sass/**/*.scss'], series(scssTask, browserSyncReload));
+    watch(['./src/sass/**/*.scss'], series(scssTask, jsTask, browserSyncReload));
 }
 
 exports.default = series(
     scssTask,
+    jsTask,
     // pngTask,
     // svgTask,
     copyHtml,
