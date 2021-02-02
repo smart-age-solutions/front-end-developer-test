@@ -95,11 +95,22 @@
             </div>
         </section>
         <section class="category">
-            <div class="category-carrousel">
-                <a href="#">
-                    <img src="./images/category.png" alt="Rings">
-                    <h3 class="category-carrousel__title">Category</h3>
-                    <h2 class="category-carrousel__rings">Rings</h2>
+            <div class="category-carrousel-item">
+                <a href="#" class="carrousel-follow-link">
+                    <h3 class="carrousel__title">Category</h3>
+                    <h2 class="carrousel__rings">Rings</h2>
+                </a>
+            </div>
+            <div class="category-carrousel-item">
+                <a href="#" class="carrousel-follow-link">
+                    <h3 class="carrousel__title">Category</h3>
+                    <h2 class="carrousel__rings">Rings</h2>
+                </a>
+            </div>
+            <div class="category-carrousel-item">
+                <a href="#" class="carrousel-follow-link">
+                    <h3 class="carrousel__title">Category</h3>
+                    <h2 class="carrousel__rings">Rings</h2>
                 </a>
             </div>
         </section>
@@ -264,12 +275,9 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-          $('.your-class').slick({
+          $('.category').slick({
               prevArrow:false,
               nextArrow:false
-
-            // setting-name: setting-value
-
           });
         });
       </script>
