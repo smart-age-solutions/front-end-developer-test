@@ -3,6 +3,7 @@
 
 .instagram{
     padding-top: 40px;
+    padding-bottom: 30px;
     background: $white-dark;
 
     .instagram-content{
@@ -19,8 +20,25 @@
 
         }
         .instagram-user{
-            margin-top: 20px;
+            @include font('Playfair Display', serif, normal, 400, 24px);
+
             text-align: center;
         }
+    }
+
+    .instagram-carrousel{
+        margin-top: 60px;
+        .instagram-link{
+            
+            .instagram__image{
+                margin: 0 auto;
+                width: 250px;
+                transition: all ease 1s;
+            }
+        }
+
+        .slick-center .instagram__image{
+            transform: scale(1.2)
+          }
     }
 }
