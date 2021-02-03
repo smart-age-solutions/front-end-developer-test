@@ -19,7 +19,6 @@
       padding-top: 35px;
       padding-bottom: 35px;
 
-
       .classic-bridal-content__title{
         color: $gold;
       }
@@ -45,4 +44,44 @@
       }
 
     }
+}
+
+@media (min-width: 834px){
+  .classic-bridal{
+    display: flex;
+
+    .classic-bridal-image{
+      flex: 1;
+
+      .classic-bridal-image__image{
+        height: 100%;
+      }
+    }
+    .classic-bridal-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      flex: 1;
+
+      padding-left: 50px;
+      padding-right: 50px;
+
+      .classic-bridal-content__description{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1800px){
+  .classic-bridal{
+
+    .classic-bridal-content{
+
+      .classic-bridal-content__description{
+        font-size: 18px;
+      }
+    }
+  }
 }
