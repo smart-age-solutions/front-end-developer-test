@@ -43,6 +43,7 @@ function copyHtml(){
         .pipe(dest('dist'));
 }
 
+// Concatenate JS files and move to dist
 function jsTask(){
     return src('./src/js/*.js')
         .pipe(concat('all.js'))
@@ -71,6 +72,7 @@ function watchTask(){
     watch(['./src/sass/**/*.scss', './src/js/*.js'], series(scssTask, jsTask, browserSyncReload));
 }
 
+//if you dont want to run all png and svg tasks again, comment them
 exports.default = series(
     scssTask,
     jsTask,
