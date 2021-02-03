@@ -2,10 +2,112 @@
   'abstracts/variables';
 
 .footer{
-    
+    .footer-contact{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      .nav-bottom{
+        display: none;
+      }
+
+      .contact-socials{
+        padding-top: 50px;
+
+        .socials-items{
+          width: 135px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+
+      .contact-contact-us{
+        padding-top: 35px;
+
+        .contact-us__link{
+          padding-top: 10px;
+          padding-right: 130px;
+          padding-left: 130px;
+          padding-bottom: 10px;
+
+          border: solid 1px $white;
+          @include font('Open sans', sans-serif, normal, 400, 12px);
+          letter-spacing: 0.2em;
+
+          color: $white;
+        }
+      }
+    }
+
+    .footer-newsletter{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding-top: 34px;
+
+      .newsletter__title{
+        font-size: 24px;
+        color: $gold;
+      }
+
+      .newsletter-form{
+        @include font('Open sans', sans-serif, normal, 400, 12px);
+        display: flex;
+        flex-direction: column;
+
+        // width: 335px;
+
+        .newsletter-form__input{
+          margin-top: 10px;
+
+          padding-top: 15px;
+          // padding-right: 130px;
+          // padding-left: 130px;
+          padding-bottom: 15px;
+
+          border: none;
+        }
+
+        .newsletter-form__button{
+          margin-top: 10px;
+
+          padding-top: 15px;
+          padding-right: 130px;
+          padding-left: 130px;
+          padding-bottom: 15px;
+          
+          color: $black;
+          background: $gold;
+          border: none;
+        }
+      }
+    }
+
+
+
     background: $black-light-1;
 
     .footer-copyright{
+        padding-top: 13px;
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+
+        @include font('Open sans', sans-serif, normal, 400, 12px);
+        letter-spacing: 0.2em;
+
+        color: $white;
         background: $black-light-2;
+
+        .footer-logo{
+
+          .logo__image{
+            margin-top: 13px;
+            margin-bottom: 13px;
+          }
+        }
     }
 }
