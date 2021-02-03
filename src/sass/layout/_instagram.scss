@@ -1,0 +1,26 @@
+@import
+  'abstracts/variables';
+
+.instagram{
+    padding-top: 40px;
+    background: $white-dark;
+
+    .instagram-content{
+        
+        .instagram-title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: $violet-dark;
+            .instagram-title__logo{
+                margin-right: 20px;
+            }
+
+        }
+        .instagram-user{
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}
