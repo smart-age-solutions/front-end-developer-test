@@ -3,4 +3,8 @@ $('.for-you-carrousel').slick({
     nextArrow: false,
     centerMode: true,
     centerPadding: '80px',
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000
   });

@@ -2,7 +2,7 @@
   'abstracts/variables';
 
 .for-you{
-    
+  margin-bottom: 30px;
   .for-you-content{
     margin-top: 30px;
 
@@ -13,7 +13,7 @@
 
     .for-you-content__title{
       margin-top: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
       width: 216px;
       text-align: center;
       line-height: 42px;
@@ -22,20 +22,27 @@
   }
 
   .for-you-carrousel{
-    
 
     .for-you-carrousel-item{
       display: flex;
       flex-direction: column;
       align-items: center;
       .carrousel__image{
-        width: 70%;
+        // width: 50%;
+        width: 133px;
+        transition: all linear .4s;
       }
+
       .carrousel__description{
+        margin-top: 20px;
         @include font('Raleway', sans-serif, normal, 300, 18px);
         letter-spacing: 0.1em;
         text-align: center;
       }
+    }
+
+    .slick-center .carrousel__image{
+      transform: scale(1.3);
     }
   }
   
