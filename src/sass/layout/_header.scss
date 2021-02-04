@@ -1,0 +1,54 @@
+@import
+  'abstracts/variables';
+
+
+.header{
+    
+    .header-sub{
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 20px;
+
+        .find-a-store{
+            display: none;
+        }
+        
+        .smart-age__logo{
+            width: 160px;
+            margin-left: 40px;
+        }
+        
+        .user-and-search{
+            display: flex;
+            margin-right: 20px;
+            
+            .user-area{
+    
+                .user,
+                .like{
+                    display: none;
+                }
+            }
+
+            .search{
+                margin-left: 40px;
+            }
+        }
+
+        .hamburger__icon{
+            position: absolute;
+            left: 10px;
+            top: 23px;
+        }
+    }
+
+    .hamburger-nav{
+        margin-top: 20px;
+        
+        .nav-items{
+
+        }
+    }
+
+}
