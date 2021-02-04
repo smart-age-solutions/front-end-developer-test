@@ -1,3 +1,4 @@
+// For you carrousel
 $('.for-you-carrousel').slick({
     prevArrow: false,
     nextArrow: false,
