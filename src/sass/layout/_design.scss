@@ -67,6 +67,8 @@
   .design{
 
     .design-content{
+      flex: 1;
+      align-items: center;
 
       .design-content__title{
         font-size: 80px;
@@ -74,6 +76,10 @@
       .design-content__description{
         font-size: 18px;
       }
+    }
+
+    .design-image{
+      flex: 1;
     }
   }
 }
