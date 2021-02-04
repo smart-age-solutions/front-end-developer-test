@@ -16,7 +16,7 @@
         
         .smart-age__logo{
             width: 160px;
-            margin-left: 40px;
+            margin-left: 60px;
         }
         
         .user-and-search{
@@ -38,17 +38,45 @@
 
         .hamburger__icon{
             position: absolute;
-            left: 10px;
+            left: 20px;
             top: 23px;
+            z-index: 2;
         }
     }
 
     .hamburger-nav{
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        display: none;
+        // margin-bottom: 20px;
         
         .nav-items{
+            width: 80%;
+            // margin-left: 20px;
 
+            .nav-item{
+                border-top: solid 0.8px $gold;
+
+                .item__link{
+                    @include font('Raleway', sans-serif, normal, 400, 14px);
+                    letter-spacing: 0.2em;
+
+                    color: $black;
+                    display: block;
+                    padding: 10px;
+                }
+                .link-user,
+                .link-like,
+                .link-find-store{
+                    display: block;
+                    padding: 10px;
+                }
+
+                .link-find-store{
+                    text-align: center;
+                }
+            }
         }
     }
-
 }
