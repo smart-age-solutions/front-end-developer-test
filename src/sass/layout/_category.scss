@@ -21,6 +21,31 @@
             justify-content: center;
 
             color: $white;
+
+            .carrousel__ring{
+                font-size: 50px;
+                
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 834px){
+    .category{
+        margin-top: 10px;
+        
+
+        .category-carrousel-item{
+            height: 500px;
+            background-image: url('../../images/category.png');
+
+            .carrousel-follow-link{
+                padding-top: 0;
+                padding-bottom: 0;
+                height: 100%;
+            }
         }
     }
 }
