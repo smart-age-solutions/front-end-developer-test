@@ -3,7 +3,7 @@
 
 
 .header{
-    
+
     .header-sub{
         display: flex;
         justify-content: space-between;
@@ -38,9 +38,10 @@
 
         .hamburger__icon{
             position: absolute;
-            left: 20px;
-            top: 23px;
+            left: 5px;
+            top: 8px;
             z-index: 2;
+            padding: 15px;
         }
     }
 
@@ -78,5 +79,9 @@
                 }
             }
         }
+    }
+
+    .active{
+            display: flex;
     }
 }
