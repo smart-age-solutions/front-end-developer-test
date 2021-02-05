@@ -44,6 +44,17 @@ h4{
     font-weight: normal;
 }
 
+//Transform text to uppercase
 .text--uppercase{
     text-transform: uppercase;
 }
+
+//Fade in animation
+@keyframes fade-in{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
