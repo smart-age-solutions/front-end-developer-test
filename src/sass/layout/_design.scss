@@ -33,9 +33,11 @@
     .design-image{
       .design-image__image{
         width: 100%;
+        animation: fade-in ease-in 2s;
       }
     }
 }
+
 
 @media (min-width: 834px){
   .design{
