@@ -113,15 +113,20 @@
             .policy-item{
               margin-top: 20px;
               // margin-left: 30px;
-              
+              @include font('Open sans', sans-serif, normal, 400, 13px);
+              letter-spacing: 0.2em;
+
               .policy__item{
-                @include font('Open sans', sans-serif, normal, 400, 13px);
-                letter-spacing: 0.2em;
                 color: $gray;
               }
 
               &:last-child{
                 margin-bottom: 20px;
+              }
+
+              .slash{
+                display: none;
+                color: $gray;
               }
             }
           }
@@ -222,6 +227,33 @@
       border-bottom: 1px solid $black-light-2;
     }
 
+    .footer-newsletter-and-policies{
+      width: 100%;
+      padding-left: 10%;
+      padding-right: 10%;
+      border: none;
+
+      .policies{
+        border-bottom: 1px solid $black-light-2;
+
+        .policies-nav{
+
+          .policies-group{
+            display: flex;
+            justify-content: space-evenly;
+
+            .policy-item{
+
+              .slash{
+                display: initial;
+                margin-left: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+
     .footer-contact-and-support{
       display: flex;
       width: 100%;
@@ -229,9 +261,25 @@
       justify-content: space-between;
       padding-left: 10%;
       padding-right: 10%;
+
+      .support{
+
+        .support-group{
+          li{
+            margin-right: 40px;
+
+            &:last-child{
+              margin-right: 0;
+            }
+          }
+        }
+      }
     }
 
-    
+    .footer-payment{
+      width: 100%;
+      padding-left: 10%;
+    }
 
     .footer-copyright{
       flex-direction: row;
