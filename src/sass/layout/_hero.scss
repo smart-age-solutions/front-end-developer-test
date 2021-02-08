@@ -5,11 +5,10 @@
 .hero{
 
   .hero-carrousel-items{
-    // height: 350px;
     
     .carrousel-item{
       height: 350px;
-      background-image: url('../../images/hero.png');
+      background-image: url('../../images/hero-1.png');
       background-repeat: no-repeat;
       background-size: cover;
       display: flex;
@@ -32,6 +31,11 @@
           margin-right: 12px;
         }
       }
+
+      &:nth-child(2),
+      &:nth-child(3){
+        display: none;
+      }
     }
   }
   .carrousel-nav{
@@ -39,20 +43,79 @@
     padding-bottom: 10px;
 
     .nav-items{
-      // display: flex;
-      // justify-content: space-evenly;
+      display: flex;
+      justify-content: space-evenly;
       @include font('Raleway', sans-serif, normal, 400, 16px);
 
       .nav__item{
-        // padding: 10px;
-        // width: 40px;
+        padding: 10px;
+        width: 40px;
         text-align: center;
-        border: solid 1px $gold;
-        border-radius: 100%;
+
+        &:first-child{
+          border: solid 1px $gold;
+          border-radius: 100%;
+        }
       }
     }
   }
+
   .discover{
     display: none;
+  }
+}
+
+
+
+@media (min-width: 834px){
+  .hero{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+
+    .hero-carrousel-items{
+      width: 100%;
+
+      .carrousel-item{
+        background-image: url('../../images/hero-2.png');
+      }
+    }
+
+    .carrousel-nav{
+      width: 60px;
+      height: 500px;
+      padding-top: 30px;
+      border-top: solid 1px $gray;
+      
+      .nav-items{
+        flex-direction: column;
+        align-items: center;
+
+        .nav__item{
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .discover{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      // transform: rotate(-90deg);
+      // margin-top: 100px;
+
+      .discover-more{
+        position: absolute;
+        transform: rotate(-90deg);
+        padding-right: 200px;
+      }
+    }
+
+    hr{
+      height: 100px;
+      margin-top: 30px;
+      // transform: rotate(-90deg);
+      color: $gold;
+    }
   }
 }

@@ -1,3 +1,4 @@
+//Hero carrousel
 //Current slide and button
 let currentSlide = document.querySelector('.carrousel-item');
 let currentNavButton = document.querySelector('.nav__item');
