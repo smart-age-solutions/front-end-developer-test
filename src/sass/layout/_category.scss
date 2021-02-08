@@ -2,7 +2,7 @@
 
 .category {
     .category-carousel-item {
-        background-image: url("../../images/category-mobile.png");
+        background-image: url("../../images/category/category-mobile.png");
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -32,7 +32,7 @@
 
         .category-carousel-item {
             height: 500px;
-            background-image: url("../../images/category.png");
+            background-image: url("../../images/category/category.png");
 
             .carousel-follow-link {
                 padding-top: 0;
