@@ -1,18 +1,22 @@
 //const gulp = require('gulp');
 const {src, series, dest, watch} = require('gulp');
 const sass = require('gulp-sass');
+const postcss = require('gulp-postcss');
+const cssnano = require('cssnano');
 const prefix = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const concat = require('gulp-concat');
+const terser = require('gulp-terser');
 const browserSync = require('browser-sync').create();
 
 
-//compile sass to css and move to dist
+//compile sass to css - minify and move to dist
 function scssTask(){
-    return src('./src/sass/main.scss')
+    return src('./src/sass/main.scss', {sourcemaps: true})
         .pipe(sass())
         .pipe(prefix('last 2 version'))
-        .pipe(dest('dist/css'));
+        .pipe(postcss([cssnano]))
+        .pipe(dest('dist/css', {sourcemaps: '.'}));
 }
 
 //compress png files and move to dist
@@ -43,10 +47,11 @@ function copyHtml(){
         .pipe(dest('dist'));
 }
 
-// Concatenate JS files and move to dist
+// Concatenate and minihy JS files and move to dist
 function jsTask(){
     return src('./src/js/*.js')
         .pipe(concat('all.js'))
+        .pipe(terser())
         .pipe(dest('dist/js'));
 }
 
@@ -82,9 +87,3 @@ exports.default = series(
     browserSyncServe,
     watchTask
 );
-
-
-// exports.watch = series(
-//     exports.default,
-//     watch
-// );
