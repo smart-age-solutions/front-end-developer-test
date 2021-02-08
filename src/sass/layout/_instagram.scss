@@ -1,44 +1,40 @@
-@import
-  'abstracts/variables';
+@import "abstracts/variables";
 
-.instagram{
+.instagram {
     padding-top: 40px;
     padding-bottom: 30px;
     background: $white-dark;
 
-    .instagram-content{
-        
-        .instagram-title{
+    .instagram-content {
+        .instagram-title {
             display: flex;
             align-items: center;
             justify-content: center;
 
             color: $violet-dark;
-            .instagram-title__logo{
+            .instagram-title__logo {
                 margin-right: 20px;
             }
-
         }
-        .instagram-user{
-            @include font('Playfair Display', serif, normal, 400, 24px);
+        .instagram-user {
+            @include font("Playfair Display", serif, normal, 400, 24px);
 
             text-align: center;
         }
     }
 
-    .instagram-carrousel{
+    .instagram-carrousel {
         margin-top: 60px;
-        .instagram-link{
-            
-            .instagram__image{
+        .instagram-link {
+            .instagram__image {
                 margin: 0 auto;
                 width: 250px;
                 transition: all ease 1s;
             }
         }
 
-        .slick-center .instagram__image{
-            transform: scale(1.2)
-          }
+        .slick-center .instagram__image {
+            transform: scale(1.2);
+        }
     }
 }

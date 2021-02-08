@@ -77,7 +77,15 @@
       width: 100%;
 
       .carrousel-item{
+        position: absolute;
+        z-index: 1;
+        width: calc(100% - 57px);
+        height: 90%;
         background-image: url('../../images/hero-2.png');
+
+        &:nth-child(2){
+          background-image: url('../../images/hero-2-2.png');
+        }
       }
     }
 
@@ -101,20 +109,18 @@
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
-      // transform: rotate(-90deg);
-      // margin-top: 100px;
 
       .discover-more{
         position: absolute;
         transform: rotate(-90deg);
-        padding-right: 200px;
+        padding-right: 150px;
       }
     }
 
     hr{
       height: 100px;
       margin-top: 30px;
-      // transform: rotate(-90deg);
+      margin-bottom: 30px;
       color: $gold;
     }
   }

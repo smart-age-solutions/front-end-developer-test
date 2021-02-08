@@ -1,17 +1,14 @@
-@import
-  'abstracts/variables';
+@import "abstracts/variables";
 
-
-.category{
-    
-    .category-carrousel-item{
-        background-image: url('../../images/category-mobile.png');
+.category {
+    .category-carrousel-item {
+        background-image: url("../../images/category-mobile.png");
         background-repeat: no-repeat;
         background-size: cover;
 
         margin-right: 0.5%;
 
-        .carrousel-follow-link{
+        .carrousel-follow-link {
             padding-top: 100px;
             padding-bottom: 100px;
 
@@ -22,26 +19,22 @@
 
             color: $white;
 
-            .carrousel__ring{
+            .carrousel__ring {
                 font-size: 50px;
-                
             }
         }
     }
 }
 
-
-
-@media (min-width: 834px){
-    .category{
+@media (min-width: 834px) {
+    .category {
         margin-top: 10px;
-        
 
-        .category-carrousel-item{
+        .category-carrousel-item {
             height: 500px;
-            background-image: url('../../images/category.png');
+            background-image: url("../../images/category.png");
 
-            .carrousel-follow-link{
+            .carrousel-follow-link {
                 padding-top: 0;
                 padding-bottom: 0;
                 height: 100%;

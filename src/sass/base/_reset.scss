@@ -1,60 +1,37 @@
-@import
-  'abstracts/mixins';
+@import "abstracts/mixins";
 
-
-*{
+* {
     margin: 0;
     padding: 0;
 
     box-sizing: border-box;
-
-    // // playfair
-    // font-family: 'Playfair Display', serif;
-    // font-weight: 400;
-    // font-weight: 700;
-    // font-weight: 900;
-
-    // // raleway
-    // font-family: 'Raleway', sans-serif;
-    // font-weight: 300;
-    // font-weight: 400;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
-h2{
-    @include font('Playfair Display', serif, normal, 700, 42px);
+h2 {
+    @include font("Playfair Display", serif, normal, 700, 42px);
     letter-spacing: 0.1em;
 }
 
-h3{
-    @include font('Raleway', sans-serif, normal, 400, 18px);
+h3 {
+    @include font("Raleway", sans-serif, normal, 400, 18px);
     letter-spacing: 0.25em;
 }
 
-h4{
-    @include font('Raleway', sans-serif, normal, 400, 14px);
+h4 {
+    @include font("Raleway", sans-serif, normal, 400, 14px);
     letter-spacing: 0.2em;
     font-weight: normal;
 }
 
 //Transform text to uppercase
-.text--uppercase{
+.text--uppercase {
     text-transform: uppercase;
 }
-
-//Fade in animation
-@keyframes fade-in{
-    from{
-      opacity: 0;
-    }
-    to{
-      opacity: 1;
-    }
-  }
