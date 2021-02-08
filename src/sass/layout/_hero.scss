@@ -4,9 +4,9 @@
 
 .hero{
 
-  .hero-carrousel-items{
+  .hero-carousel-items{
     
-    .carrousel-item{
+    .carousel-item{
       height: 350px;
       background-image: url('../../images/hero-1.png');
       background-repeat: no-repeat;
@@ -15,7 +15,7 @@
       flex-direction: column;
       justify-content: flex-end;
 
-      .carrousel__title{
+      .carousel__title{
         color: $white;
         padding-left: 20px;
       }
@@ -38,7 +38,7 @@
       }
     }
   }
-  .carrousel-nav{
+  .carousel-nav{
     padding-top: 10px;
     padding-bottom: 10px;
 
@@ -73,10 +73,10 @@
     flex-direction: row-reverse;
     justify-content: end;
 
-    .hero-carrousel-items{
+    .hero-carousel-items{
       width: 100%;
 
-      .carrousel-item{
+      .carousel-item{
         position: absolute;
         z-index: 1;
         width: calc(100% - 57px);
@@ -89,7 +89,7 @@
       }
     }
 
-    .carrousel-nav{
+    .carousel-nav{
       width: 60px;
       height: 500px;
       padding-top: 30px;

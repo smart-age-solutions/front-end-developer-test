@@ -19,18 +19,18 @@
     }
   }
 
-  .for-you-carrousel {
-    .for-you-carrousel-item {
+  .for-you-carousel {
+    .for-you-carousel-item {
       display: flex;
       flex-direction: column;
       align-items: center;
-      .carrousel__image {
+      .carousel__image {
         // width: 50%;
         width: 133px;
         transition: all linear 0.4s;
       }
 
-      .carrousel__description {
+      .carousel__description {
         margin-top: 20px;
         @include font("Raleway", sans-serif, normal, 300, 18px);
         letter-spacing: 0.1em;
@@ -38,7 +38,7 @@
       }
     }
 
-    .slick-center .carrousel__image {
+    .slick-center .carousel__image {
       transform: scale(1.3);
     }
   }

@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -15,7 +19,7 @@ li {
     list-style: none;
 }
 
-h2 {
+h1,h2 {
     @include font("Playfair Display", serif, normal, 700, 42px);
     letter-spacing: 0.1em;
 }

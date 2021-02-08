@@ -1,4 +1,4 @@
-// Category carrousel
+// Category carousel
 $('.category').slick({
     prevArrow: false,
     nextArrow: false,

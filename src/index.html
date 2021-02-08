@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Age</title>
+    <meta name="description"
+        content="The latest from Jewelry Store. Discover all that’s new, brilliant and beautiful in the world of Brand's Name">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
@@ -21,11 +23,11 @@
 <body>
     <header class="header">
         <div class="header-sub">
-            <a href="#" class="find-a-store">
-                <img src="./svg/Find-store.svg" alt="Find a store image" class="find__store">
+            <a href="#find-a-store" class="find-a-store">
+                <img src="./svg/Find-store.svg" alt="Find a store image link" class="find__store">
             </a>
             <a href="#" class="smart-age-logo">
-                <img src="./svg/Smart Age Header Logo.svg" alt="Smart age image" class="smart-age__logo">
+                <img src="./svg/Smart Age Header Logo.svg" alt="Smart age logo" class="smart-age__logo" itemprop="logo">
             </a>
             <div class="user-and-search">
                 <ul class="user-area">
@@ -42,7 +44,7 @@
         <nav class="hamburger-nav">
             <ul class="hamburger-nav-items">
                 <li class="nav-item">
-                    <a href="#" class="link-find-store">
+                    <a href="#find-a-store" class="link-find-store">
                         <img src="./svg/Find-store.svg" alt="Find a store image" class="store__image">
                     </a>
                 </li>
@@ -51,77 +53,76 @@
                 <li class="nav-item"><a href="#" class="link-like"><img src="./svg/Like.svg" alt="like"
                             class="like__image"></a></li>
 
-                <li class="nav-item"><a href="#" class="item__link text--uppercase">Collections</a></li>
-                <li class="nav-item"><a href="#" class="item__link text--uppercase">Categories</a></li>
-                <li class="nav-item"><a href="#" class="item__link text--uppercase">Stores</a></li>
+                <li class="nav-item"><a href="#collection" class="item__link text--uppercase">Collections</a></li>
+                <li class="nav-item"><a href="#category" class="item__link text--uppercase">Categories</a></li>
+                <li class="nav-item"><a href="#stores" class="item__link text--uppercase">Stores</a></li>
                 <li class="nav-item"><a href="#" class="item__link text--uppercase">Our Story</a></li>
-                <li class="nav-item"><a href="#" class="item__link text--uppercase">Contact</a></li>
+                <li class="nav-item"><a href="#contact" class="item__link text--uppercase">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <div class="hero-carrousel-items">
-                <div class="carrousel-item">
-                    <h2 class="carrousel__title">Engagement Ring</h2>
-                    <a href="#" class="hero-follow-link">
-                        <img src="./svg/Right arrow 2.svg" alt="Link for the Engagement Ring" class="follow-link__image">
-                        <h4 class="follow-link__description text--uppercase">Explore</h4>
-                    </a>
-                </div>
-                <div class="carrousel-item">
-                    <h2 class="carrousel__title">Engagement Ring 2</h2>
-                    <a href="#" class="hero-follow-link">
-                        <img src="./svg/Right arrow 2.svg" alt="Link for the Engagement Ring" class="follow-link__image">
-                        <h4 class="follow-link__description text--uppercase">Explore</h4>
-                    </a>
-                </div>
-                <div class="carrousel-item">
-                    <h2 class="carrousel__title">Engagement Ring 3</h2>
-                    <a href="#" class="hero-follow-link">
-                        <img src="./svg/Right arrow 2.svg" alt="Link for the Engagement Ring" class="follow-link__image">
-                        <h4 class="follow-link__description text--uppercase">Explore</h4>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="carrousel-nav">
-                <ul class="nav-items">
-                    <li class="nav__item item__1">1</li>
-                    <li class="nav__item item__2">2</li>
-                    <li class="nav__item item__3">3</li>
-                </ul>
-                <div class="discover">
-                    <h4 class="discover-more text--uppercase">
-                        <a href="#">Discover more</a>
-                    </h4>
-                    <hr>
-                </div>
-            </div>
-        </section>
-
-        <section class="design">
-            <div class="design-content">
-                <h2 class="design-content__title">The original Design</h2>
-                <p class="design-content__description">Inspired by a spectacular historical legacy and the most refined
-                    glamour of the world today.</p>
-                <a href="#" class="design-content-follow-link">
-                    <img src="./svg/Right arrow.svg" alt="Link for The Original Design"
-                        class="design-content-follow-link__image">
-                    <h4 class="design-content-follow-link__description text--uppercase">Explore</h4>
+    <section class="hero">
+        <div class="hero-carousel-items">
+            <div class="carousel-item">
+                <h2 class="carousel__title">Engagement Ring</h2>
+                <a href="#" class="hero-follow-link">
+                    <img src="./svg/Right arrow 2.svg" alt="Link for the Engagement Ring" class="follow-link__image">
+                    <h4 class="follow-link__description text--uppercase">Explore</h4>
                 </a>
             </div>
-            <div class="design-image">
-                <img src="./images/design.png" alt="design image" class="design-image__image">
+            <div class="carousel-item">
+                <h2 class="carousel__title">Engagement Earring</h2>
+                <a href="#" class="hero-follow-link">
+                    <img src="./svg/Right arrow 2.svg" alt="Link for the Engagement Ring" class="follow-link__image">
+                    <h4 class="follow-link__description text--uppercase">Explore</h4>
+                </a>
             </div>
-        </section>
-        <section class="jewelry-store">
+            <div class="carousel-item">
+                <h2 class="carousel__title">Engagement Ring 2</h2>
+                <a href="#" class="hero-follow-link">
+                    <img src="./svg/Right arrow 2.svg" alt="Link for the Engagement Ring" class="follow-link__image">
+                    <h4 class="follow-link__description text--uppercase">Explore</h4>
+                </a>
+            </div>
+        </div>
+
+        <div class="carousel-nav">
+            <ul class="nav-items">
+                <li class="nav__item item__1">1</li>
+                <li class="nav__item item__2">2</li>
+                <li class="nav__item item__3">3</li>
+            </ul>
+            <div class="discover">
+                <h4 class="discover-more text--uppercase">
+                    <a href="#">Discover more</a>
+                </h4>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <section class="design" id="collection">
+        <div class="design-content">
+            <h2 class="design-content__title">The original Design</h2>
+            <p class="design-content__description">Inspired by a spectacular historical legacy and the most refined
+                glamour of the world today.</p>
+            <a href="#" class="design-content-follow-link">
+                <img src="./svg/Right arrow.svg" alt="Link for The Original Design"
+                    class="design-content-follow-link__image">
+                <h4 class="design-content-follow-link__description text--uppercase">Explore</h4>
+            </a>
+        </div>
+        <div class="design-image">
+            <img src="./images/design.png" alt="design image" class="design-image__image">
+        </div>
+    </section>
+    <main>
+        <section class="jewelry-store" id="find-a-store" itemscope itemtype="https://schema.org/JewelryStore">
             <div class="jewelry-store-content">
                 <h3 class="jewelry-store-content__latest-from text--uppercase">The latest from</h3>
-                <h2 class="jewelry-store-content__title">Jewelry Store</h2>
-                <p class="jewelry-store-content__description">Discover all that’s new, brilliant and beautiful in the
-                    world of
-                    Brand's Name.
+                <h1 class="jewelry-store-content__title">Jewelry Store</h1>
+                <p class="jewelry-store-content__description" itemprop="slogan">Discover all that’s new, brilliant and
+                    beautiful in the world of Brand's Name.
                 </p>
             </div>
             <a href="#" class="jewelry-store-follow-link">
@@ -129,154 +130,154 @@
                 <h4 class="jewelry-store-follow-link__description text--uppercase">See more</h4>
             </a>
         </section>
-        <section class="classic-bridal">
-            <div class="classic-bridal-image">
-                <img src="./images/classic-bridal.png" loading="lazy" alt="classic bridal"
-                    class="classic-bridal-image__image">
-            </div>
-            <div class="classic-bridal-content">
-                <h2 class="classic-bridal-content__title">Classic Bridal</h2>
-                <p class="classic-bridal-content__description">Our extraordinary diamonds are chosen to celebrate a
-                    love, a
-                    hope and a passion. Brilliantly capturing our passion for diamonds, a member of the family
-                    individually hand-selects each stone within our bridal collection, so you can fall in love with a
-                    diamond for eternity.</p>
-                <a href="#" class="classic-bridal-follow-link">
-                    <img src="./svg/Right arrow 2.svg" alt="classic bridal" class="classic-bridal-follow-link__image">
-                    <h4 class="classic-bridal-follow-link__description text--uppercase">Shop Now</h4>
-                </a>
-            </div>
-        </section>
-        <section class="category">
-            <div class="category-carrousel-item">
-                <a href="#" class="carrousel-follow-link">
-                    <h3 class="carrousel__title">Category</h3>
-                    <h2 class="carrousel__rings">Rings</h2>
-                </a>
-            </div>
-            <div class="category-carrousel-item">
-                <a href="#" class="carrousel-follow-link">
-                    <h3 class="carrousel__title">Category</h3>
-                    <h2 class="carrousel__rings">Rings</h2>
-                </a>
-            </div>
-            <div class="category-carrousel-item">
-                <a href="#" class="carrousel-follow-link">
-                    <h3 class="carrousel__title">Category</h3>
-                    <h2 class="carrousel__rings">Rings</h2>
-                </a>
-            </div>
-        </section>
-        <section class="for-you">
-            <div class="for-you-content">
-                <h3 class="for-you-content__shop text--uppercase">Shop</h3>
-                <h2 class="for-you-content__title">Selected for you</h2>
-            </div>
-            <div class="for-you-carrousel">
-                <div class="for-you-carrousel-item">
-                    <img src="./images/for-you-1.png" alt="Anel 1" class="carrousel__image">
-                    <span class="carrousel__description"><a href="#">18K Rose Gold Engagement Ring</a></span>
-                </div>
-                <div class="for-you-carrousel-item">
-                    <img src="./images/for-you-2.png" alt="Anel 1" class="carrousel__image">
-                    <span class="carrousel__description"><a href="#">18K Rose Gold Engagement Ring</a></span>
-                </div>
-                <div class="for-you-carrousel-item">
-                    <img src="./images/for-you-3.png" alt="Anel 1" class="carrousel__image">
-                    <span class="carrousel__description"><a href="#">18K Rose Gold Engagement Ring</a></span>
-                </div>
-            </div>
-        </section>
-        <section class="collections">
-            <div class="collections-content">
-                <h2 class="collections-content__title">Collections</h2>
-                <div class="slider">slider</div>
-            </div>
-            <a href="#" class="collections-follow-link">
-                <img src="./svg/Right arrow.svg" alt="collections" class="collections-follow-link__image">
-                <h4 class="collections-follow-link__description text--uppercase">View All</h4>
-            </a>
-        </section>
-        <section class="about-us">
-            <div class="about-us-content">
-                <h3 class="about-us-content__about-us text--uppercase">About Us</h3>
-                <h2 class="about-us-content__title">Excellence & Tradition</h2>
-                <div class="slider">slider</div>
-            </div>
-        </section>
-        <secton class="events">
-            <div class="events-title">
-                <h3 class="events__title text--uppercase">Events</h3>
-                <h2 class="events__meet-us-title">Meet us at</h2>
-            </div>
-            <div class="events-content">
-                <div class="events-content-item">
-                    <div class="event-date">
-                        <span class="event-date__month text--uppercase">April</span>
-                        <span class="event-date__day text--uppercase">April</span>
-                    </div>
-                    <div class="event-date-content">
-                        <span class="event-date-content__title">The Shops at Chestnut Hill</span>
-                        <span class="event-date-content__description">Bloomingdale's, Chestnut Hill, MA</span>
-                    </div>
-                </div>
-                <div class="events-content-item">
-                    <div class="event-date">
-                        <span class="event-date__month text--uppercase">April</span>
-                        <span class="event-date__day text--uppercase">April</span>
-                    </div>
-                    <div class="event-date-content">
-                        <span class="event-date-content__title">The Shops at Chestnut Hill</span>
-                        <span class="event-date-content__description">Bloomingdale's, Chestnut Hill, MA</span>
-                    </div>
-                </div>
-                <div class="events-content-item">
-                    <div class="event-date">
-                        <span class="event-date__month text--uppercase">April</span>
-                        <span class="event-date__day text--uppercase">April</span>
-                    </div>
-                    <div class="event-date-content">
-                        <span class="event-date-content__title">The Shops at Chestnut Hill</span>
-                        <span class="event-date-content__description">Bloomingdale's, Chestnut Hill, MA</span>
-                    </div>
-                </div>
-            </div>
-        </secton>
-        <section class="instagram">
-            <div class="instagram-content">
-                <div class="instagram-title">
-                    <img src="./svg/instagram-gold.svg" alt="instagram logo" class="instagram-title__logo">
-                    <h2 class="instagram-title__title">Instagram</h2>
-                </div>
-                <div class="instagram-user">@smartshop</div>
-            </div>
-            <div class="instagram-carrousel">
-                <a href="#" class="instagram-link">
-                    <img src="./images/instagram-1.png" alt="instagram image" class="instagram__image">
-                </a>
-                <a href="#" class="instagram-link">
-                    <img src="./images/instagram-1.png" alt="instagram image" class="instagram__image">
-                </a>
-                <a href="#" class="instagram-link">
-                    <img src="./images/instagram-1.png" alt="instagram image" class="instagram__image">
-                </a>
-            </div>
-        </section>
-        <section class="stores">
-            <h3 class="stores__title text--uppercase">Stores</h3>
-            <h2 class="stores__find-store">Find Store</h2>
-            <a href="#" class="stores-follow-link">
-                <img src="./svg/Right arrow 2.svg" alt="Find Store" class="stores-follow-link__image">
-            </a>
-        </section>
     </main>
-    <footer class="footer">
+    <section class="classic-bridal">
+        <div class="classic-bridal-image">
+            <img src="./images/classic-bridal.png" loading="lazy" alt="classic bridal"
+                class="classic-bridal-image__image">
+        </div>
+        <div class="classic-bridal-content">
+            <h2 class="classic-bridal-content__title">Classic Bridal</h2>
+            <p class="classic-bridal-content__description">Our extraordinary diamonds are chosen to celebrate a
+                love, a
+                hope and a passion. Brilliantly capturing our passion for diamonds, a member of the family
+                individually hand-selects each stone within our bridal collection, so you can fall in love with a
+                diamond for eternity.</p>
+            <a href="#" class="classic-bridal-follow-link">
+                <img src="./svg/Right arrow 2.svg" alt="classic bridal" class="classic-bridal-follow-link__image">
+                <h4 class="classic-bridal-follow-link__description text--uppercase">Shop Now</h4>
+            </a>
+        </div>
+    </section>
+    <section class="category" id="category">
+        <div class="category-carousel-item">
+            <a href="#" class="carousel-follow-link">
+                <h3 class="carousel__title">Category</h3>
+                <h2 class="carousel__rings">Rings</h2>
+            </a>
+        </div>
+        <div class="category-carousel-item">
+            <a href="#" class="carousel-follow-link">
+                <h3 class="carousel__title">Category</h3>
+                <h2 class="carousel__rings">Rings</h2>
+            </a>
+        </div>
+        <div class="category-carousel-item">
+            <a href="#" class="carousel-follow-link">
+                <h3 class="carousel__title">Category</h3>
+                <h2 class="carousel__rings">Rings</h2>
+            </a>
+        </div>
+    </section>
+    <section class="for-you">
+        <div class="for-you-content">
+            <h3 class="for-you-content__shop text--uppercase">Shop</h3>
+            <h2 class="for-you-content__title">Selected for you</h2>
+        </div>
+        <div class="for-you-carousel">
+            <div class="for-you-carousel-item">
+                <img src="./images/for-you-1.png" alt="Anel 1" class="carousel__image">
+                <span class="carousel__description"><a href="#">18K Rose Gold Engagement Ring</a></span>
+            </div>
+            <div class="for-you-carousel-item">
+                <img src="./images/for-you-2.png" alt="Anel 1" class="carousel__image">
+                <span class="carousel__description"><a href="#">18K Rose Gold Engagement Ring</a></span>
+            </div>
+            <div class="for-you-carousel-item">
+                <img src="./images/for-you-3.png" alt="Anel 1" class="carousel__image">
+                <span class="carousel__description"><a href="#">18K Rose Gold Engagement Ring</a></span>
+            </div>
+        </div>
+    </section>
+    <section class="collections">
+        <div class="collections-content">
+            <h2 class="collections-content__title">Collections</h2>
+            <div class="slider">slider</div>
+        </div>
+        <a href="#" class="collections-follow-link">
+            <img src="./svg/Right arrow.svg" alt="collections" class="collections-follow-link__image">
+            <h4 class="collections-follow-link__description text--uppercase">View All</h4>
+        </a>
+    </section>
+    <section class="about-us">
+        <div class="about-us-content">
+            <h3 class="about-us-content__about-us text--uppercase">About Us</h3>
+            <h2 class="about-us-content__title">Excellence & Tradition</h2>
+            <div class="slider">slider</div>
+        </div>
+    </section>
+    <secton class="events">
+        <div class="events-title">
+            <h3 class="events__title text--uppercase">Events</h3>
+            <h2 class="events__meet-us-title">Meet us at</h2>
+        </div>
+        <div class="events-content">
+            <div class="events-content-item">
+                <div class="event-date">
+                    <span class="event-date__month text--uppercase">April</span>
+                    <span class="event-date__day text--uppercase">April</span>
+                </div>
+                <div class="event-date-content">
+                    <span class="event-date-content__title">The Shops at Chestnut Hill</span>
+                    <span class="event-date-content__description">Bloomingdale's, Chestnut Hill, MA</span>
+                </div>
+            </div>
+            <div class="events-content-item">
+                <div class="event-date">
+                    <span class="event-date__month text--uppercase">April</span>
+                    <span class="event-date__day text--uppercase">April</span>
+                </div>
+                <div class="event-date-content">
+                    <span class="event-date-content__title">The Shops at Chestnut Hill</span>
+                    <span class="event-date-content__description">Bloomingdale's, Chestnut Hill, MA</span>
+                </div>
+            </div>
+            <div class="events-content-item">
+                <div class="event-date">
+                    <span class="event-date__month text--uppercase">April</span>
+                    <span class="event-date__day text--uppercase">April</span>
+                </div>
+                <div class="event-date-content">
+                    <span class="event-date-content__title">The Shops at Chestnut Hill</span>
+                    <span class="event-date-content__description">Bloomingdale's, Chestnut Hill, MA</span>
+                </div>
+            </div>
+        </div>
+    </secton>
+    <section class="instagram">
+        <div class="instagram-content">
+            <div class="instagram-title">
+                <img src="./svg/instagram-gold.svg" alt="instagram logo" class="instagram-title__logo">
+                <h2 class="instagram-title__title">Instagram</h2>
+            </div>
+            <div class="instagram-user">@smartshop</div>
+        </div>
+        <div class="instagram-carousel">
+            <a href="#" class="instagram-link">
+                <img src="./images/instagram-1.png" alt="instagram image" class="instagram__image">
+            </a>
+            <a href="#" class="instagram-link">
+                <img src="./images/instagram-1.png" alt="instagram image" class="instagram__image">
+            </a>
+            <a href="#" class="instagram-link">
+                <img src="./images/instagram-1.png" alt="instagram image" class="instagram__image">
+            </a>
+        </div>
+    </section>
+    <section class="stores" id="stores">
+        <h3 class="stores__title text--uppercase">Stores</h3>
+        <h2 class="stores__find-store">Find Store</h2>
+        <a href="#" class="stores-follow-link">
+            <img src="./svg/Right arrow 2.svg" alt="Find Store" class="stores-follow-link__image">
+        </a>
+    </section>
+    <footer class="footer" id="contact">
         <div class="footer-contact">
             <nav class="nav-bottom">
                 <ul>
                     <li><a href="#" class="text--uppercase">Collections</a></li>
-                    <li><a href="#" class="text--uppercase">Categories</a></li>
-                    <li><a href="#" class="text--uppercase">Stores</a></li>
+                    <li><a href="#category" class="text--uppercase">Categories</a></li>
+                    <li><a href="#stores" class="text--uppercase">Stores</a></li>
                     <li><a href="#" class="text--uppercase">Our Store</a></li>
                 </ul>
             </nav>

@@ -1,6 +1,6 @@
-//Hero carrousel
+// Hero carousel
 //Current slide and button
-let currentSlide = document.querySelector('.carrousel-item');
+let currentSlide = document.querySelector('.carousel-item');
 let currentNavButton = document.querySelector('.nav__item');
 
 //Navigation
@@ -12,20 +12,20 @@ navigation.forEach((value, i) => {
 
         setBorder(value);
 
-        const selected = document.querySelectorAll('.carrousel-item')[i];
+        const selected = document.querySelectorAll('.carousel-item')[i];
 
         setVisibility(selected);
     });
 });
 
-function setBorder(value){
+function setBorder(value) {
     currentNavButton.style.border = 'none';
     value.style.border = 'solid 1px rgba(213, 163, 104, 1)';
     value.style.borderRadius = '100%';
     currentNavButton = value;
 }
 
-function setVisibility(selected){
+function setVisibility(selected) {
     currentSlide.style.display = "none";
     selected.style.display = 'flex';
     currentSlide = selected;
