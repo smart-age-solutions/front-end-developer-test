@@ -21,7 +21,7 @@ function scssTask(){
 
 //compress png files and move to dist
 function pngTask(){
-    return src('./src/images/*.png')
+    return src('./src/images/**/*.png')
         .pipe(imagemin({
             optimizationLevel: 5
         }))
@@ -81,8 +81,8 @@ function watchTask(){
 exports.default = series(
     scssTask,
     jsTask,
-    // pngTask,
-    // svgTask,
+    pngTask,
+    svgTask,
     copyHtml,
     browserSyncServe,
     watchTask
