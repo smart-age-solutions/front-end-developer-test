@@ -18,7 +18,7 @@
             width: 90%;
             margin: 0 auto;
 
-            @include font("Raleway", sans-serif, normal, 400, 18px);
+            @include font("Raleway", sans-serif, normal, 400, 1.8rem);
             letter-spacing: 0.1em;
 
             margin-top: 18px;
@@ -35,7 +35,7 @@
                 flex-direction: column;
 
                 .event__day{
-                    @include font("Playfair Display", serif, normal, 900, 36px);
+                    @include font("Playfair Display", serif, normal, 900, 3.6rem);
                     color: $gold;
                 }
             }
@@ -45,7 +45,7 @@
 
                 .event__location{
                     font-weight: bold;
-                    font-size: 23px;
+                    font-size: 2.3rem;
                 }
                 .event__address{
                     color: $gray;

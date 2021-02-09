@@ -11,7 +11,7 @@
     padding-right: 50px;
 
     .design-content__description {
-      @include font("Raleway", sans-serif, normal, 400, 16px);
+      @include font("Raleway", sans-serif, normal, 400, 1.6rem);
       letter-spacing: 0.1em;
 
       margin-top: 20px;
@@ -48,7 +48,7 @@
       padding-bottom: 0;
 
       .design-content__description {
-        font-size: 14px;
+        font-size: 1.4rem;
       }
     }
 
@@ -67,10 +67,10 @@
       align-items: center;
 
       .design-content__title {
-        font-size: 80px;
+        font-size: 8rem;
       }
       .design-content__description {
-        font-size: 18px;
+        font-size: 1.8rem;
       }
     }
 

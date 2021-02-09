@@ -45,7 +45,7 @@
     .nav-items{
       display: flex;
       justify-content: space-evenly;
-      @include font('Raleway', sans-serif, normal, 400, 16px);
+      @include font('Raleway', sans-serif, normal, 400, 1.6rem);
 
       .nav__item{
         padding: 10px;
@@ -71,7 +71,7 @@
   .hero{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: end;
+    justify-content: flex-end;
 
     .hero-carousel-items{
       width: 100%;

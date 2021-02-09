@@ -55,7 +55,7 @@
                 border-top: solid 0.8px $gold;
 
                 .item__link {
-                    @include font("Raleway", sans-serif, normal, 400, 14px);
+                    @include font("Raleway", sans-serif, normal, 400, 1.4rem);
                     letter-spacing: 0.2em;
 
                     color: $black;
