@@ -14,6 +14,10 @@ html{
 
 a {
     text-decoration: none;
+    
+    &:visited{
+        color: #000;
+    }
 }
 
 li {
