@@ -14,9 +14,10 @@ html{
 
 a {
     text-decoration: none;
+    color: rgba(51, 51, 51, 1);
     
     &:visited{
-        color: #000;
+        color: rgba(51, 51, 51, 1);
     }
 }
 
