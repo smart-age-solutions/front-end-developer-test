@@ -208,6 +208,14 @@
       margin-left: 10%;
       margin-right: 10%;
       border-bottom: 1px solid $black-light-2;
+
+      .contact-contact-us{
+
+        .contact-us__link:hover{
+          background: $gold;
+          color: $black;
+        }
+      }
     }
 
     .footer-newsletter-and-policies {
