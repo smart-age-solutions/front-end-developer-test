@@ -216,6 +216,34 @@
       padding-right: 10%;
       border: none;
 
+      .newsletter{
+
+        .newsletter__title{
+          margin-bottom: 20px;
+        }
+
+        .newsletter-form{
+          width: 80%;
+          .newsletter-form__input{
+            margin-top: 0;
+
+          }
+          .newsletter-form__button{
+            width: 20%;
+            position: absolute;
+            right: 18%;
+            margin-top: 5px;
+            margin-right: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            &:hover{
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
       .policies {
         border-bottom: 1px solid $black-light-2;
 
