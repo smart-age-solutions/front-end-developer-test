@@ -1,0 +1,44 @@
+@import "abstracts/variables";
+
+.for-you {
+  margin-bottom: 30px;
+  .for-you-content {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .for-you-content__title {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 216px;
+      text-align: center;
+      line-height: 42px;
+      color: $violet-dark;
+    }
+  }
+
+  .for-you-carousel {
+    .for-you-carousel-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .carousel__image {
+        width: 133px;
+        transition: all linear 0.4s;
+      }
+
+      .carousel__description {
+        margin-top: 20px;
+        @include font("Raleway", sans-serif, normal, 300, 1.8rem);
+        letter-spacing: 0.1em;
+        text-align: center;
+      }
+    }
+
+    .slick-center .carousel__image {
+      transform: scale(1.3);
+    }
+  }
+}

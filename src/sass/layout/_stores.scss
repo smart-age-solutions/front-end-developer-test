@@ -1,0 +1,25 @@
+@import "abstracts/variables";
+
+.stores {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 100%),
+        url("../../images/stores/stores-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .stores__title {
+        margin-bottom: 5px;
+        color: $gold;
+    }
+    .stores__find-store {
+        margin-bottom: 20px;
+        color: $white;
+    }
+}

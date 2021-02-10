@@ -1,0 +1,168 @@
+@import "abstracts/variables";
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .header-sub {
+        display: flex;
+        justify-content: space-between;
+
+        .find-a-store {
+            display: none;
+        }
+
+        .smart-age__logo {
+            width: 160px;
+            margin-left: 60px;
+        }
+
+        .user-and-search {
+            display: flex;
+            margin-right: 20px;
+
+            .user-area {
+                .user,
+                .like {
+                    display: none;
+                }
+            }
+
+            .search {
+                margin-left: 40px;
+            }
+        }
+
+        .hamburger__icon {
+            position: absolute;
+            left: 5px;
+            top: 8px;
+            z-index: 2;
+            padding: 15px;
+        }
+    }
+
+    .hamburger-nav {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        display: none;
+
+        .hamburger-nav-items {
+            width: 80%;
+
+            .nav-item {
+                border-top: solid 0.8px $gold;
+
+                .item__link {
+                    @include font("Raleway", sans-serif, normal, 400, 1.4rem);
+                    letter-spacing: 0.2em;
+
+                    color: $black;
+                    display: block;
+                    padding: 10px;
+                }
+                .link-user,
+                .link-like,
+                .link-find-store {
+                    display: block;
+                    padding: 10px;
+                }
+
+                .link-find-store {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .active {
+        display: flex;
+    }
+}
+
+@media (min-width: 834px) {
+    .header {
+        .header-sub {
+            align-items: center;
+            margin-bottom: 30px;
+
+            .find-a-store {
+                display: initial;
+                margin-left: 20px;
+            }
+
+            .smart-age__logo {
+                width: 210px;
+                margin-left: 0px;
+            }
+
+            .user-and-search{
+
+                .search{
+                    cursor: pointer;
+                }
+            }
+
+            .hamburger__icon {
+                display: none;
+            }
+        }
+        .hamburger-nav {
+            display: initial;
+
+            .hamburger-nav-items {
+                display: flex;
+                justify-content: center;
+
+                width: 100%;
+
+                .nav-item {
+                    border: none;
+                    margin-left: 50px;
+
+                    .item__link {
+                        font-weight: 500;
+                        letter-spacing: 0.1em;
+                        padding: 0;
+
+                        &:hover {
+                            color: $gold;
+                        }
+                    }
+
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        display: none;
+                    }
+
+                    &:nth-child(4) {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1800px) {
+    .header {
+        .header-sub {
+            .user-and-search {
+                .user-area {
+                    display: flex;
+
+                    li {
+                        margin-left: 20px;
+                    }
+
+                    .user,
+                    .like {
+                        display: initial;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import "abstracts/mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(51, 51, 51, 1);
+    
+    &:visited{
+        color: rgba(51, 51, 51, 1);
+    }
+}
+
+li {
+    list-style: none;
+}
+
+h1,h2 {
+    @include font("Playfair Display", serif, normal, 700, 4.2rem);
+    letter-spacing: 0.1em;
+}
+
+h3 {
+    @include font("Raleway", sans-serif, normal, 400, 1.8rem);
+    letter-spacing: 0.25em;
+}
+
+h4 {
+    @include font("Raleway", sans-serif, normal, 400, 1.4rem);
+    letter-spacing: 0.2em;
+    font-weight: normal;
+}
+
+//Transform text to uppercase
+.text--uppercase {
+    text-transform: uppercase;
+}

@@ -1,0 +1,40 @@
+@import "abstracts/variables";
+
+.instagram {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background: $white-dark;
+
+    .instagram-content {
+        .instagram-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: $violet-dark;
+            .instagram-title__logo {
+                margin-right: 20px;
+            }
+        }
+        .instagram-user {
+            @include font("Playfair Display", serif, normal, 400, 2.4rem);
+
+            text-align: center;
+        }
+    }
+
+    .instagram-carousel {
+        margin-top: 60px;
+        .instagram-link {
+            .instagram__image {
+                margin: 0 auto;
+                width: 250px;
+                transition: all ease 1s;
+            }
+        }
+
+        .slick-center .instagram__image {
+            transform: scale(1.2);
+        }
+    }
+}

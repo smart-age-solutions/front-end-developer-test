@@ -1,0 +1,44 @@
+@import "abstracts/variables";
+
+.category {
+    .category-carousel-item {
+        background-image: url("../../images/category/category-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        margin-right: 0.5%;
+
+        .carousel-follow-link {
+            padding-top: 100px;
+            padding-bottom: 100px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            color: $white;
+
+            .carousel__ring {
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 834px) {
+    .category {
+        margin-top: 10px;
+
+        .category-carousel-item {
+            height: 500px;
+            background-image: url("../../images/category/category.png");
+
+            .carousel-follow-link {
+                padding-top: 0;
+                padding-bottom: 0;
+                height: 100%;
+            }
+        }
+    }
+}

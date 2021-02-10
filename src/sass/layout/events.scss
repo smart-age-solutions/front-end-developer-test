@@ -1,0 +1,66 @@
+@import "abstracts/variables";
+
+.events{
+
+    .events-title{
+        margin-top: 80px;
+        text-align: center;
+
+        .events__meet-us-title{
+            color: $gold;
+        }
+    }
+
+    .events-group{
+        margin-bottom: 80px;
+
+        .event{
+            width: 90%;
+            margin: 0 auto;
+
+            @include font("Raleway", sans-serif, normal, 400, 1.8rem);
+            letter-spacing: 0.1em;
+
+            margin-top: 18px;
+            padding-top: 18px;
+
+            border-top: solid 1px $gray-light;
+
+            &:last-child{
+                border-bottom: solid 1px $gray-light;
+            }
+
+            .event-date{
+                display: flex;
+                flex-direction: column;
+
+                .event__day{
+                    @include font("Playfair Display", serif, normal, 900, 3.6rem);
+                    color: $gold;
+                }
+            }
+
+            .event-address{
+                width: 280px;
+
+                .event__location{
+                    font-weight: bold;
+                    font-size: 2.3rem;
+                }
+                .event__address{
+                    color: $gray;
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 834px) {
+    
+    .events{
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

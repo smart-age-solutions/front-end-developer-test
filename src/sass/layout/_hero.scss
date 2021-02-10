@@ -1,0 +1,131 @@
+@import
+  'abstracts/variables';
+
+
+.hero{
+
+  .hero-carousel-items{
+    
+    .carousel-item{
+      height: 350px;
+      background-image: url('../../images/hero/hero-1.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .carousel__title{
+        color: $white;
+        padding-left: 20px;
+      }
+
+      .hero-follow-link{
+        display: flex;
+        align-items: center;
+        color: $white;
+        padding-left: 20px;
+        padding-bottom: 20px;
+
+        .follow-link__image{
+          margin-right: 12px;
+        }
+      }
+
+      &:nth-child(2),
+      &:nth-child(3){
+        display: none;
+      }
+    }
+  }
+  .carousel-nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .nav-items{
+      display: flex;
+      justify-content: space-evenly;
+      @include font('Raleway', sans-serif, normal, 400, 1.6rem);
+
+      .nav__item{
+        padding: 10px;
+        width: 40px;
+        text-align: center;
+
+        &:first-child{
+          border: solid 1px $gold;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+
+  .discover{
+    display: none;
+  }
+}
+
+
+
+@media (min-width: 834px){
+  .hero{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    .hero-carousel-items{
+      width: 100%;
+
+      .carousel-item{
+        position: absolute;
+        z-index: 1;
+        width: calc(100% - 57px);
+        height: 90%;
+        background-image: url('../../images/hero/hero-2.png');
+
+        &:nth-child(2){
+          background-image: url('../../images/hero/hero-2-2.png');
+        }
+      }
+    }
+
+    .carousel-nav{
+      width: 60px;
+      height: 500px;
+      padding-top: 30px;
+      border-top: solid 1px $gray;
+      
+      .nav-items{
+        flex-direction: column;
+        align-items: center;
+
+        .nav__item{
+          margin-bottom: 10px;
+
+          &:hover{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .discover{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      .discover-more{
+        position: absolute;
+        transform: rotate(-90deg);
+        padding-right: 150px;
+      }
+    }
+
+    hr{
+      height: 100px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: $gold;
+    }
+  }
+}

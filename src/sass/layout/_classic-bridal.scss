@@ -1,0 +1,79 @@
+@import "abstracts/variables";
+
+.classic-bridal {
+  background: $violet-dark;
+
+  .classic-bridal-image {
+    .classic-bridal-image__image {
+      width: 100%;
+    }
+  }
+
+  .classic-bridal-content {
+    width: 303px;
+    margin: 0 auto;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+    .classic-bridal-content__title {
+      color: $gold;
+    }
+    .classic-bridal-content__description {
+      @include font("Raleway", sans-serif, normal, 400, 1.6rem);
+      letter-spacing: 0.1em;
+      line-height: 24px;
+      color: $white;
+
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .classic-bridal-follow-link {
+      display: flex;
+      align-items: center;
+      color: $white;
+
+      .classic-bridal-follow-link__image {
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+@media (min-width: 834px) {
+  .classic-bridal {
+    display: flex;
+
+    .classic-bridal-image {
+      flex: 1;
+
+      .classic-bridal-image__image {
+        height: 100%;
+      }
+    }
+    .classic-bridal-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      flex: 1;
+
+      padding-left: 50px;
+      padding-right: 50px;
+
+      .classic-bridal-content__description {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .classic-bridal {
+    .classic-bridal-content {
+      .classic-bridal-content__description {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

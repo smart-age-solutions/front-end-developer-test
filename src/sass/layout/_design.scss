@@ -1,0 +1,81 @@
+@import "abstracts/variables";
+
+.design {
+  .design-content {
+    padding-top: 37px;
+    padding-bottom: 37px;
+
+    background: $yellow-light;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .design-content__description {
+      @include font("Raleway", sans-serif, normal, 400, 1.6rem);
+      letter-spacing: 0.1em;
+
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .design-content-follow-link {
+      width: 150px;
+      display: flex;
+      align-items: center;
+
+      .design-content-follow-link__image {
+        margin-right: 12px;
+      }
+    }
+  }
+  .design-image {
+    .design-image__image {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 834px) {
+  .design {
+    display: flex;
+    justify-content: center;
+
+    .design-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .design-content__description {
+        font-size: 1.4rem;
+      }
+    }
+
+    .design-image {
+      .design-image__image {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .design {
+    .design-content {
+      flex: 1;
+      align-items: center;
+
+      .design-content__title {
+        font-size: 8rem;
+      }
+      .design-content__description {
+        font-size: 1.8rem;
+      }
+    }
+
+    .design-image {
+      flex: 1;
+    }
+  }
+}

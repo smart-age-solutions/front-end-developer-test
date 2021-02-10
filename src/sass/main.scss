@@ -1,0 +1,11 @@
+@charset 'utf-8';
+
+// 1. Configuration
+@import "abstracts/variables", "abstracts/mixins";
+
+// 2. Base stuff
+@import "base/reset";
+
+// 3. Layout-related sections
+@import "layout/header", "layout/hero", "layout/design", "layout/jewelry-store", "layout/classic-bridal",
+  "layout/category", "layout/for-you", "layout/events.scss", "layout/instagram", "layout/stores", "layout/footer";
