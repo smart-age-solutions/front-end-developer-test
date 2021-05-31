@@ -75,7 +75,7 @@ export default function Footer() {
                         <img src={mastercard} alt=""/>
                         <img src={visa} alt="visa"/>
                         <img src={discover} alt=""/>
-                        <img src={paypal} alt=""/>
+                        <img src={paypal} alt="paypal"/>
                         <img src={americanExpress} alt=""/>
                     </span>
                 </div>
