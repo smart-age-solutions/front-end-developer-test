@@ -1,17 +1,30 @@
 <template>
-    <div class="glide">
+    <section class="glide">
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
                 <li class="glide__slide">
-                    <img src="../assets/rings.png" alt="">
+                    <img src="@/assets/rings.png" alt="Anéis de Casamento">
+                    <div class="glide__card">
+                        <h1 class="slide__text">Engagement Ring</h1>
+                    <btnChevron class="btn_icon" :text="texButton" :styleIcon="styleIcon"/>
+                    </div>
                 </li>
                 <li class="glide__slide">
-                    <img src="../assets/model-2.png" alt="">
+                    <img src="@/assets/model-2.png" alt="Brinco de Pérola">
+                    <div class="glide__card">
+                        <h1 class="slide__text">Perola Earing</h1>
+                    <btnChevron class="btn_icon" :text="texButton" :styleIcon="styleIcon"/>
+                    </div>
                 </li>
                 <li class="glide__slide">
-                    <img src="../assets/ring-saphire.png" alt="">
+                    <img src="@/assets/ring-diamond.png" alt="Anéis de Casamento">
+                    <div class="glide__card">
+                        <h1 class="slide__text">Ring</h1>
+                    <btnChevron class="btn_icon" :text="texButton" :styleIcon="styleIcon"/>
+                    </div>
                 </li>
             </ul>
+
         </div>
 
         <div class="glide__bullets" data-glide-el="controls[nav]">
@@ -19,59 +32,96 @@
             <button class="glide__bullet" data-glide-dir="=1">2</button>
             <button class="glide__bullet" data-glide-dir="=2">3</button>
 
-            <div class="line"></div>
+            <div class="line" />
 
             <div class="side-text">DISCOVER MORE</div>
         </div>
-    </div>
+    </section>
 </template>
 
-<style lang="scss">
+<script>
+import btnChevron from '@/components/ChevronButton'
+
+export default {
+    name: 'glide',
+    components: {
+        btnChevron,
+    },
+    data() {
+        return {
+            glideSlide: [
+                {id: 0, link: 'rings', name: 'Anéis de Casamento', text: 'Engagement Ring'},
+                {id: 1, link: 'model-2', name: 'Brinco de Pérola', text: 'Pearl Earing'},
+                {id: 2, link: 'ring-diamond', name: 'Anéis de Casamento', text: 'Engagement Ring 2'}
+            ],
+            texButton: 'EXPLORE',
+            styleIcon: {
+                color: 'white',
+            }
+        }
+    }
+}
+</script>
+
+<style lang="scss" scoped>
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+$fontSizeDefault: 1vw;
 
     .glide {
         display: flex;
         flex-direction: row-reverse;
 
-        width: 100vw;
-        height: 70vw;
+        width: 100%;
 
-        background: #FFFFFF;
+        margin-bottom: -37vh;
 
-        border: 1px solid black;
-
+        z-index: 1;
         .glide__track {
             .glide__slides {
+
                 .glide__slide {
-                    width: 100%;
-                    height: 100%;
-
+                    width: 100vw;
                     img {
-                        width: 90%;
-
+                        width: 100%;
                     }
+                    .glide__card {
+                        position: relative;
 
-                    background-color: #FFFFFF;
+                        left: 5vw;
+                        bottom: 33vh;
+                        .slide__text {
+                            color: white;
+                            font-size: $fontSizeDefault * 6;
+
+                            margin-bottom: 2vh;
+                        }
+                    }
                 }
             }
         }
         .glide__bullets {
-            height: 9.5rem;
+            width: 8vh;
+            height: 100vh;
 
-            background-color: #FFFFFF;
-
-            margin: 8.625rem 1.25rem 0 1.25rem;
+            margin: auto 0;
+            justify-items: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             .glide__bullet {
-                width: 2.5rem;
-                height: 2.5rem;
+                width: 2.5vw;
+                height: 2.5vw;
+
+                font-size: $fontSizeDefault;
 
                 outline: none;
                 border: none;
 
                 border-radius: 100%;
 
-                margin-bottom: 1rem;
+                margin-bottom: 1vw;
 
                 background-color: transparent;
 
@@ -81,29 +131,27 @@
             }
 
             .line {
-                margin: 0 auto;
-
                 background-color:#D5A368;
 
                 width: 1px;
-                height: 9.375rem;
+                height: 20vh;
             }
 
             .side-text {
+                position: relative;
+
+                width: max-content;
+
+                margin-top: 9vh;
+
+                font-size: $fontSizeDefault;
+
+                word-spacing: .1vw;
+                letter-spacing: .1vw;
+
                 transform: rotateZ(-90deg);
-
-                width: 2rem;
-                margin: 9rem 0
-
             }
         }
     }
 
 </style>
-
-<script>
-
-export default {
-    name: 'glide',
-}
-</script>
