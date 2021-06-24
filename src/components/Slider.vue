@@ -49,11 +49,6 @@ export default {
     },
     data() {
         return {
-            glideSlide: [
-                {id: 0, link: 'rings', name: 'Anéis de Casamento', text: 'Engagement Ring'},
-                {id: 1, link: 'model-2', name: 'Brinco de Pérola', text: 'Pearl Earing'},
-                {id: 2, link: 'ring-diamond', name: 'Anéis de Casamento', text: 'Engagement Ring 2'}
-            ],
             texButton: 'EXPLORE',
             styleIcon: {
                 color: 'white',
