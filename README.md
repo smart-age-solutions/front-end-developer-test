@@ -1,24 +1,41 @@
-# front-end-developer-test
+# Front-End Developer Test
 
-## Project setup
+## Objetivo
+Desenvolver uma Single Page responsiva de um site de jóias.
+
+## Tecnologias Utilizadas:
+* Vue.js
+* SASS/SCSS
+* Glide.js
+
+## Requisitos
+### Instalação:
+- Visual Studio Code;
+- Git;
+- Node.js;
+- Vue.js;
+- SASS/SCSS.
+
+## Configuração do projeto.
+### Instalação.
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compilação e reexecução para o desenvolvimento.
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilação e minificação para a produção.
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Análise e correção de arquivos.
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Referências
+[Personalização de Configuração](https://cli.vuejs.org/config/).
