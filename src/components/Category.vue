@@ -7,7 +7,7 @@
                         <h2 class="card__subtitle">CATEGORY</h2>
                         <h1 class="card__title">Rings</h1>
                     </div>
-                    <img src="../assets/ring-diamond.png" :style="`top: -17vh`" alt="ring diamond">
+                    <img src="../assets/ring-diamond.png" :style="styleFirstSlide" alt="ring diamond">
                 </li>
                 <li class="glide__slide">
                     <img src="../assets/model-2.png" alt="ring diamond">
@@ -29,16 +29,25 @@
 
 export default {
     name: 'category',
+
+    data() {
+        return {
+            styleFirstSlide: {
+                top: '-26vh',
+                left: '7vw',
+            }
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
-$heightDiv: 67vh;
+$heightDiv: 70vh;
 
     #category {
-        width: 100%;
+        width: 100vw;
         height: $heightDiv;
 
         .glide__track {
@@ -53,6 +62,17 @@ $heightDiv: 67vh;
                 .glide__slide {
                     max-width: 100%;
                     overflow: hidden;
+
+                    background-color: white;
+
+                    opacity: .3;
+
+                    &.glide__slide--active {
+                        background-color: transparent;
+                        opacity: 1;
+
+                        transition: .001 ease-in;
+                    }
 
                     .slide__card {
 
@@ -79,7 +99,7 @@ $heightDiv: 67vh;
                         }
                     }
                     img {
-                        width: 100%;
+                        width: 100vw;
 
                         position: relative;
 
@@ -89,29 +109,22 @@ $heightDiv: 67vh;
             }
         }
         .glide__arrows {
-            width: 18vw;
-            height: $heightDiv;
+            width: 100vw;
 
             position: relative;
 
-            background-color:rgba(255,255,255,0.6);
-
-            bottom: $heightDiv;
-            left: 84%;
+            bottom: $heightDiv / 2;
+            left: 90%;
 
             .glide__arrow {
                 width: 4vw;
                 height: 4vw;
-
-                position: absolute;
 
                 border-radius: 50%;
                 outline: none;
                 border: none;
 
                 top: 50%;
-
-               margin-left: 10vw;
 
                 background-color: white;
 
@@ -121,13 +134,7 @@ $heightDiv: 67vh;
                 &:hover {
                     cursor: pointer;
                 }
-
-                .glide__arrow--right {
-                    font-size: 1vw;
-                }
-
             }
-
         }
     }
 </style>
