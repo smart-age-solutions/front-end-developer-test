@@ -24,7 +24,6 @@
                     </div>
                 </li>
             </ul>
-
         </div>
 
         <div class="glide__bullets" data-glide-el="controls[nav]">
@@ -96,7 +95,7 @@ $fontSizeDefault: 1vw;
             }
         }
         .glide__bullets {
-            width: 8vh;
+            width: 6vw;
             height: 100vh;
 
             margin: auto 0;
@@ -106,8 +105,8 @@ $fontSizeDefault: 1vw;
             align-items: center;
 
             .glide__bullet {
-                width: 2.5vw;
-                height: 2.5vw;
+                width: 3vw;
+                height: 3vw;
 
                 font-size: $fontSizeDefault;
 
@@ -120,8 +119,11 @@ $fontSizeDefault: 1vw;
 
                 background-color: transparent;
 
-                &:focus, &:active {
+                &.glide__bullet--active {
                     border: 1px solid #D5A368;
+                }
+                &:hover {
+                    cursor: pointer;
                 }
             }
 
@@ -130,6 +132,8 @@ $fontSizeDefault: 1vw;
 
                 width: 1px;
                 height: 20vh;
+
+                margin-bottom: 3vh;
             }
 
             .side-text {
