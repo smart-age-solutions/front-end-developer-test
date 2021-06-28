@@ -31,8 +31,8 @@ export default {
         align-items: center;
 
         .btn_icon {
-            width: 3.5vw;
-            height: 3.5vw;
+            width: 3vw;
+            height: 3vw;
 
             border-radius: 50%;
             border: 1px solid #D5A368;
@@ -40,17 +40,16 @@ export default {
             font-size: 1vw;
 
             background-color: transparent;
-            // color: $color;
 
             &:hover {
-                background-color: gray;
+                cursor: pointer;
+
+                background-color: rgba(255, 255, 255, .3);
             }
         }
         .chevron_text {
             font-size: 1vw;
             margin-left: 1vw;
-
-            // color: $color;
         }
     }
 </style>
