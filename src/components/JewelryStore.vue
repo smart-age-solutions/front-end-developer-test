@@ -42,8 +42,9 @@ export default {
             align-items: center;
 
             .container_text_up {
-                font-size: 1.2vw;
-                font-weight: 400;
+                font-size: 1.4vw;
+                font-family: sans-serif;
+                font-weight: 100;
 
                 letter-spacing: .3vw;
             }
@@ -56,8 +57,10 @@ export default {
                 color: #D5A368;
             }
             .container_text {
-                font-size: 1.2vw;
-                font-weight: 700;
+                font-size: 1.35vw;
+                font-family: sans-serif;
+
+                letter-spacing: .1vw;
             }
         }
     }
