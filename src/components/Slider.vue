@@ -143,6 +143,7 @@ $fontSizeDefault: 1vw;
 
                 margin-top: 9vh;
 
+                font-family: sans-serif;
                 font-size: $fontSizeDefault;
 
                 word-spacing: .1vw;
