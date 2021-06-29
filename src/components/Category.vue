@@ -2,18 +2,15 @@
     <section id="category" class="glide">
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
-                <li class="glide__slide">
+                <li class="glide__slide"
+                    v-for="image in Images"
+                    :key="image.id"
+                    :style="{backgroundImage:`url(${image.src})`}"
+                >
                     <div class="slide__card">
-                        <h2 class="card__subtitle">CATEGORY</h2>
-                        <h1 class="card__title">Rings</h1>
+                        <h2 class="card__subtitle">{{image.subtitle}}</h2>
+                        <h1 class="card__title">{{image.title}}</h1>
                     </div>
-                    <img src="../assets/ring-diamond.png" :style="styleFirstSlide" alt="ring diamond">
-                </li>
-                <li class="glide__slide">
-                    <img src="../assets/model-2.png" alt="ring diamond">
-                </li>
-                <li class="glide__slide">
-                    <img src="../assets/ring-saphire.png" alt="ring diamond">
                 </li>
             </ul>
         </div>
@@ -32,10 +29,11 @@ export default {
 
     data() {
         return {
-            styleFirstSlide: {
-                top: '-26vh',
-                left: '7vw',
-            }
+            Images: [
+                {id: 0, src: require('@/assets/ring-diamond.png'), subtitle: 'CATEGORY', title: 'Rings'},
+                {id: 1, src: require('@/assets/model-2.png'), subtitle: '', title: ''},
+                {id: 2, src: require('@/assets/ring-saphire.png'), subtitle: '', title: ''},
+            ]
         }
     }
 }
@@ -48,73 +46,56 @@ $heightDiv: 70vh;
 
     #category {
         width: 100vw;
-        height: $heightDiv;
 
         .glide__track {
             margin: 1vh 0;
 
             .glide__slides {
-                display: flex;
-                flex-direction: row;
-                right: 16vw;
                 height: $heightDiv - 1;
 
                 .glide__slide {
-                    max-width: 100%;
-                    overflow: hidden;
-
-                    background-color: white;
+                    background-size: 110%;
+                    background-repeat: no-repeat;
+                    background-position-y: 50%;
 
                     opacity: .3;
 
                     &.glide__slide--active {
                         background-color: transparent;
                         opacity: 1;
-
-                        transition: .001 ease-in;
                     }
 
                     .slide__card {
-
                         position: relative;
 
                         top: 50%;
 
                         text-align: center;
+
                         color: white;
-
-                        z-index: 1;
-
                         .card__subtitle {
-                            width: 100%;
                             letter-spacing: .5vw;
 
-                            font-size: clamp(.6vw, 1vw, 2vw);
+                            font-size: 1.1vw;
+                            font-family: sans-serif;
                         }
                         .card__title {
-                            width: 100%;
                             letter-spacing: 1vw;
 
-                            font-size: clamp(7vw, 1vw, 1vw);
+                            font-size: 7vw;
+                            font-weight: 700;
                         }
-                    }
-                    img {
-                        width: 100vw;
-
-                        position: relative;
-
-                        top: -8vh;
                     }
                 }
             }
         }
         .glide__arrows {
-            width: 100vw;
+            width: 100%;
 
             position: relative;
 
             bottom: $heightDiv / 2;
-            left: 90%;
+            left: 94%;
 
             .glide__arrow {
                 width: 4vw;
