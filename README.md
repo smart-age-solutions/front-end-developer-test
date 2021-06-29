@@ -4,9 +4,9 @@
 Desenvolver uma Single Page responsiva de um site de jóias.
 
 ## Tecnologias Utilizadas:
-* Vue.js
-* SASS/SCSS
-* Glide.js
+* Vue.js (framework)
+* SASS/SCSS (pré-processador)
+* Glide.js (biblioteca)
 
 ## Requisitos
 ### Instalação:
@@ -14,7 +14,8 @@ Desenvolver uma Single Page responsiva de um site de jóias.
 - Git;
 - Node.js;
 - Vue.js;
-- SASS/SCSS.
+- SASS/SCSS;
+- Glide.js.
 
 ## Configuração do projeto.
 ### Instalação.
