@@ -1,6 +1,6 @@
 <template>
     <div class="btn-chevron">
-        <button class="btn_icon" :style="styleIcon">></button>
+        <button class="btn_icon" :style="[styleIcon, colorIcon]">></button>
         <p class="chevron_text" :style="styleIcon">{{text}}</p>
     </div>
 </template>
@@ -16,6 +16,10 @@ export default {
     styleIcon: {
         type: Object,
         default: () => {},
+    },
+    colorIcon: {
+        type: Object,
+        default: () => {},
     }
   },
 
@@ -25,8 +29,7 @@ export default {
 <style lang="scss" scoped>
 
 .btn-chevron {
-        display: flex;
-        flex-direction: row;
+        display: inline-flex;
 
         align-items: center;
 
@@ -48,7 +51,11 @@ export default {
             }
         }
         .chevron_text {
+            font-family: sans-serif;
             font-size: 1vw;
+
+            letter-spacing: .2vw;
+
             margin-left: 1vw;
         }
     }
