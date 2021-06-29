@@ -67,7 +67,7 @@ export default {
         return {
             styleIcon: {
                 color: 'white',
-            },
+            }
         }
     }
 }
@@ -142,6 +142,8 @@ $leftBefore: 10vw;
                     justify-content: space-between;
 
                     font-family: system-ui;
+
+                    list-style-type: none;
 
                     .list__options {
                         font-size: 1vw;
