@@ -8,25 +8,12 @@
         <div id="carousel-shop" class="glide">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
-                    <li class="glide__slide">
-                        <img src="../assets/ring-2.png" alt="ring diamond">
-                        <caption>Lorem Ipsum</caption>
-                    </li>
-                    <li class="glide__slide">
-                        <img src="../assets/ring-silver.png" alt="ring diamond">
-                        <caption>Lorem Ipsum</caption>
-                    </li>
-                    <li class="glide__slide">
-                        <img src="../assets/ring-amavida.png" alt="ring diamond">
-                        <caption>18K Rose Gold Engagement Ring</caption>
-                    </li>
-                    <li class="glide__slide">
-                        <img src="../assets/ring-ruby-diamond.png" alt="ring diamond">
-                        <caption>Lorem Ipsum</caption>
-                    </li>
-                    <li class="glide__slide">
-                        <img src="../assets/ring-2.png" alt="ring diamond">
-                        <caption>Lorem Ipsum</caption>
+                    <li class="glide__slide"
+                        v-for="image in Images"
+                        :key="image.id"
+                        :style="{backgroundImage:`url(${image.src})`}"
+                    >
+                        <caption>{{image.caption}}</caption>
                     </li>
                 </ul>
             </div>
@@ -42,6 +29,18 @@
 <script>
 export default {
     name: 'shop',
+
+    data() {
+        return {
+            Images: [
+                {id: 0, src: require('@/assets/ring-2.png'), caption: 'Lorem Ipsum'},
+                {id: 1, src: require('@/assets/ring-silver.png'), caption: 'Lorem Ipsum'},
+                {id: 2, src: require('@/assets/ring-amavida.png'), caption: '18K Rose Gold Engagement Ring'},
+                {id: 3, src: require('@/assets/ring-ruby-diamond.png'), caption: 'Lorem Ipsum'},
+                {id: 4, src: require('@/assets/ring-2.png'), caption: 'Lorem Ipsum'},
+            ]
+        }
+    }
 }
 </script>
 
@@ -64,66 +63,59 @@ $heightDiv: 100vh;
             z-index: 1;
 
             .card__subtitle {
-                width: 100%;
                 letter-spacing: .5vw;
 
-                font-size: clamp(.6vw, 1vw, 2vw);
+               font-size: 1.5vw;
+               font-family: sans-serif;
             }
             .card__title {
-                width: 100%;
                 letter-spacing: 1vw;
 
                 font-weight: 700;
-                font-size: clamp(7vw, 1vw, 1vw);
+                font-size: 7vw;
             }
         }
 
         #carousel-shop {
-            width: 100vw;
-
-            margin-top: 10vh;
+            width: 100%;
 
             .glide__track {
-                overflow: visible;
                 .glide__slides {
-                    overflow: visible;
-                    perspective-origin: center;
-                    perspective: 90vw;
+                    height: 50vh;
 
                     .glide__slide {
-                        width: 80vw;
-
                         filter: blur(1px);
                         opacity: .75;
                         transition: .3s linear;
 
-                        transform: scale(.8);
+                        background-size: contain;
+                        background-repeat: no-repeat;
+
+                        transform: scale(.7);
 
                         text-align: center;
 
                         &.glide__slide--active {
                             opacity: 1;
 
+                            transform: scale(1.1);
+
                             filter: none;
 
-                            transform: scale(1.35);
                             transition: .5s ease-in-out;
 
                             caption {
-                                width: 100%;
-
                                 display: block;
+
+                                position: relative;
 
                                 font-size: 1.2vw;
                                 font-family: arial;
 
-                                margin-bottom: 10vh;
+                                top: 45vh;
 
                                 letter-spacing: .1vw;
                             }
-                        }
-                        img {
-                            width: 100%;
                         }
                         caption {
                             display: none;
@@ -132,16 +124,16 @@ $heightDiv: 100vh;
                 }
             }
             .glide__arrows {
-                width: 90%;
+                width: 94%;
 
                 position: absolute;
 
                 display: inline-flex;
                 justify-content: space-between;
-                align-content: center;
 
-                top: 40%;
-                left: 4vw;
+                margin: 0 2vw;
+
+                top: 50%;
 
                 @media screen and (max-width: 1023px) {
                     display: none;
