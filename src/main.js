@@ -22,7 +22,7 @@ new Glide('.glide', {
 new Glide('#category', {
   type: 'carousel',
   startAt: 0,
-  perView: 1,
+  perView: 1.3,
   focusAt: 0,
   keyboard: 'true',
   perTouch: 1,
@@ -56,16 +56,6 @@ new Glide('#collection__carousel', {
   perTouch: 0,
 }).mount();
 
-
-new Glide('#collection__carousel', {
-  type: 'slider',
-  startAt: 0,
-  gap: 0,
-  perView: 1,
-  animationDuration: 0,
-  keyboard: false,
-  perTouch: 0,
-}).mount();
 
 new Glide('#about-us__carousel', {
   type: 'slider',
