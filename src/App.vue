@@ -3,14 +3,14 @@
     <header id="header">
       <div class="header__vectors">
         <button class="vectors__location">
-          <div class="location__icon"></div>
+          <div class="location__icon" :style="styleVector"></div>
           <div class="location__text">Find a Store</div>
         </button>
         <div class="vectors__icons">
-          <div class="icons__user"></div>
-          <div class="icons__hearth"></div>
-          <div class="icons__bag"></div>
-          <div class="icons__search"></div>
+          <button class="icons__user" :style="styleVector"></button>
+          <button class="icons__hearth" :style="styleVector"></button>
+          <button class="icons__bag" :style="styleVector"></button>
+          <button class="icons__search"><div class="search" :style="styleVector"></div></button>
         </div>
       </div>
       <img id="logo" src="../src/assets/smart-age-logo.svg" alt="logotipo do Smart Age Solutions">
@@ -38,7 +38,7 @@
 <script>
 
 import glide from '@/components/Slider'
-import originalDesign from '@/components/OriginalDesignPage'
+import originalDesign from '@/components/OriginalDesign'
 import jewelryStore from '@/components/JewelryStore'
 import classicBridal from '@/components/ClassicBridal'
 import category from '@/components/Category'
@@ -73,6 +73,16 @@ export default {
         { id: 3, name: 'OUR STORY', link: '#ourstory' },
         { id: 4, name: 'CONTACT', link: '#contact' }
       ],
+      styleVector: {
+        width: '2vw',
+        height: '3vh',
+        outline: 'none',
+        border: 'none',
+        margin: 'auto',
+        'background-color' : 'transparent',
+        'background-size' : 'contain',
+        'background-repeat' : 'no-repeat',
+      }
     }
   },
 }
@@ -80,19 +90,13 @@ export default {
 
 <style lang="scss" scoped>
 
-$bg-general: #FFFFFF;
-$font-color-general: #000000;
-$bg-bage: #F9EFE4;
-$font-color-primary: #D5A368;
-$bg-seconday: #472138;
-$bg-instagram: #999595;
-$bg-contact: #333333;
+@import '../src/assets/reset/reset.css';
 
 #app {
   overflow: hidden;
   #header {
     width: 100vw;
-    height: 20vh;
+    height: 25vh;
 
     display: flex;
     flex-direction: column;
@@ -101,33 +105,97 @@ $bg-contact: #333333;
     align-items: center;
 
     .header__vectors {
-      width: 100%;
+      width: 96%;
 
       display: inline-flex;
 
       justify-content: space-between;
       align-items: center;
 
+      margin-top: 2.5vh;
+
       .vectors__location {
+        display: inline-flex;
+        align-items: center;
+
+        border: 1px solid lightgrey;
+        border-radius: 2vw;
+
+        padding: 1vh 2vw;
+
+        outline: none;
+
+        background-color: transparent;
+
         .location__icon {
           background-image: url('../src/assets/location-vector.png');
         }
         .location__text {
           font-size: 1.2vw;
+          font-weight: 500;
+          font-family: system-ui;
+        }
+
+        &:hover {
+          cursor: pointer;
+
+          transition: .2s ease-in-out;
+
+          background-color: lightgray;
         }
       }
       .vectors__icons {
-        .icons__users {
+        width: 20vw;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .icons__user {
           background-image: url('../src/assets/user-vector.png');
+
+          &:hover {
+            cursor: pointer;
+          }
         }
         .icons__hearth {
           background-image: url('../src/assets/hearth-vector.png');
+
+          &:hover {
+            cursor: pointer;
+          }
         }
         .icons__bag {
           background-image: url('../src/assets/bag-vector.png');
+
+          &:hover {
+            cursor: pointer;
+          }
         }
         .icons__search {
-          background-image: url('../src/assets/search-vector.png');
+          background-color: #F2F2F2;
+
+          outline: none;
+          border: none;
+          border-radius: 50%;
+
+          width: 4vw;
+          height: 4vw;
+
+          margin-left: 3vw;
+
+          .search {
+            background-image: url('../src/assets/search-vector.png');
+            background-position: 50%;
+          }
+
+          &:hover {
+            cursor: pointer;
+
+            transition: .2s ease-in-out;
+
+            background-color: lightgray;
+          }
         }
       }
     }
@@ -155,12 +223,13 @@ $bg-contact: #333333;
         list-style: none;
 
         .options {
-          font-size: .8vw;
-          font-family: Raleway;
+          font-size: 1vw;
+          font-family: system-ui;
+          font-weight: 500;
 
           text-decoration: none;
 
-          color: $font-color-general;
+          color: black;
         }
       }
     }
