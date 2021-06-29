@@ -5,17 +5,16 @@
         <div id="collection__carousel" class="glide">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
-                    <li class="glide__slide">
-                        <img src="../assets/model-3.png" alt="ring diamond">
-                        <btnChevron class="glide__btn__img" :text="textButtonImg"  :style="styleIcon" />
-                    </li>
-                    <li class="glide__slide">
-                        <img src="../assets/model-3.png" alt="ring diamond">
-                        <btnChevron class="glide__btn__img" :text="textButtonImg" :style="styleIcon" />
-                    </li>
-                    <li class="glide__slide">
-                        <img src="../assets/model-3.png" alt="ring diamond">
-                        <btnChevron class="glide__btn__img" :text="textButtonImg" :style="styleIcon" />
+                    <li class="glide__slide"
+                        v-for="image in Images"
+                        :key="image.id"
+                        :style="{backgroundImage:`url(${image.src})`}"
+                    >
+                        <btnChevron class="glide__btn"
+                                    :text="textButtonImg"
+                                    :styleIcon="styleIcon"
+                                    :colorIcon="colorIcon"
+                        />
                     </li>
                 </ul>
             </div>
@@ -26,7 +25,11 @@
                 <button class="glide__bullet" data-glide-dir="=2">CARISSA</button>
             </div>
         </div>
-        <btnChevron class="btn__icon" :text="textBtnChevron" :styleIcon="styleIcon" />
+        <btnChevron class="btn__icon"
+                    :text="textBtnChevron"
+                    :styleIcon="styleIcon"
+                    :colorIcon="colorIcon"
+        />
     </section>
 </template>
 
@@ -40,10 +43,19 @@ export default {
     },
     data() {
         return {
-            textBtnChevron: 'VIEW ALL',
+            Images: [
+                {id: 0, src: require('@/assets/model-3.png')},
+                {id: 1, src: require('@/assets/model-3.png')},
+                {id: 2, src: require('@/assets/model-3.png')},
+            ],
+
             textButtonImg: 'VIEW MORE',
+            textBtnChevron: 'VIEW ALL',
             styleIcon: {
                 color: 'black',
+            },
+            colorIcon: {
+                border: '1px solid black',
             },
         }
     }
@@ -55,10 +67,11 @@ export default {
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
 $fontSizeDefault: 1vw;
+$leftDiv: 6vw;
 
     #collection {
         width: 100vw;
-        height: 60vh;
+        height: 90vh;
 
         background-color: #D5A368;
 
@@ -68,7 +81,7 @@ $fontSizeDefault: 1vw;
             position: relative;
 
             top: 17vh;
-            left: 9vw;
+            left: $leftDiv + 1;
 
             letter-spacing: 0.2vw;
 
@@ -78,26 +91,26 @@ $fontSizeDefault: 1vw;
             z-index: 1;
         }
         #collection__carousel {
-            display: flex;
+            display: inline-flex;
             flex-direction: row-reverse;
 
             width: 100%;
 
-            top: 4vh;
-            left: 8vw;
+            left: $leftDiv;
 
             position: relative;
 
             .glide__track {
                 .glide__slides {
+                    height: 100vh;
                     .glide__slide {
-                        img {
-                            width: 67%;
-                        }
-                        .glide__btn__img {
-                            position: relative;
+                        background-size: 70%;
+                        background-repeat: no-repeat;
 
-                            bottom: 8vh;
+                        .glide__btn {
+                            position: absolute;
+
+                            bottom: 16vh;
                             left: 2vw;
 
                             letter-spacing: .1vw;
@@ -107,14 +120,14 @@ $fontSizeDefault: 1vw;
             }
             .glide__bullets {
                 width: 69vw;
-                height: 22vh;
+                height: 25vh;
 
                 justify-content: space-around;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
 
-                margin-top: 17vh;
+                margin-top: 23vh;
                 padding-right: 3vw;
 
                 .glide__bullet {
@@ -152,11 +165,10 @@ $fontSizeDefault: 1vw;
         .btn__icon {
             position: relative;
 
-            bottom: 24vh;
-            left: 8vw;
+            bottom: 50%;
+            left: $leftDiv;
 
             letter-spacing: .1vw;
         }
     }
-
 </style>
