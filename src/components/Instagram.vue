@@ -52,11 +52,30 @@ export default {
         .instagram__card {
             padding-top: 5vh;
             text-align: center;
+
             .card__title {
                 font-size: 6vw;
                 font-weight: 700;
 
                 color: #472138;
+
+                &::after {
+                    content: '';
+
+                    display: block;
+
+                    width: 2vw;
+                    height: 2vw;
+
+                    position: relative;
+
+                    top: -3vw;
+                    left: 33vw;
+
+                    background-image: url('../assets/instagram-vector.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
             }
             .card__email {
                 font-size: 3vw;
